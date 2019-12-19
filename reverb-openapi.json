@@ -1,0 +1,3486 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "3.0",
+        "title": "reverb",
+        "description": "reverb",
+        "termsOfService": "https:\/\/reverb.com\/page\/terms"
+    },
+    "servers": [
+        "httpsapi.reverb.com\/api"
+    ],
+    "paths": {
+        "\/articles": {
+            "get": {
+                "summary": "Get Articles",
+                "description": "Get articles.",
+                "operationId": "GetArticles",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "per_page",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "query",
+                        "in": "query",
+                        "description": "What's being searched for"
+                    },
+                    {
+                        "name": "exclude_featured",
+                        "in": "query",
+                        "description": "Number of featured articles to exclude"
+                    }
+                ]
+            }
+        },
+        "\/categories": {
+            "get": {
+                "summary": "Get Categories",
+                "description": "List of supported product categories",
+                "operationId": "GetCategories",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/categories\/flat": {
+            "get": {
+                "summary": "Get Categories Flat",
+                "description": "Get categories flat.",
+                "operationId": "GetCategoriesFlat",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/categories\/taxonomy": {
+            "get": {
+                "summary": "Get Categories Taxonomy",
+                "description": "Full taxonomy tree of categories including middle categories",
+                "operationId": "GetCategoriesTaxonomy",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/categories\/{product_type}\/{category}": {
+            "get": {
+                "summary": "Get Categories Product Type Category",
+                "description": "Get categories product type category.",
+                "operationId": "GetCategoriesProductTypeCategory",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "product_type",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "category",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/categories\/{uuid}": {
+            "get": {
+                "summary": "Get Categories Uu",
+                "description": "Get category details",
+                "operationId": "GetCategoriesUu",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "uuid",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/comparison_shopping_pages": {
+            "get": {
+                "summary": "Get Comparison Shopping Pages",
+                "description": "Returns a set of comparison shopping pages based on the current params",
+                "operationId": "GetComparisonShoppingPages",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/comparison_shopping_pages\/find": {
+            "get": {
+                "summary": "Get Comparison Shopping Pages Find",
+                "description": "Get comparison shopping pages find.",
+                "operationId": "GetComparisonShoppingPagesFind",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "description": "ID of the comparison shopping page"
+                    },
+                    {
+                        "name": "slug",
+                        "in": "query",
+                        "description": "Slug of the comparison shopping page"
+                    }
+                ]
+            }
+        },
+        "\/comparison_shopping_pages\/{id}": {
+            "get": {
+                "summary": "Get Comparison Shopping Pages",
+                "description": "Get comparison shopping pages.",
+                "operationId": "GetComparisonShoppingPages",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/comparison_shopping_pages\/{id}\/listings": {
+            "get": {
+                "summary": "Get Comparison Shopping Pages Listings",
+                "description": "Return new or used listings for a comparison shopping page",
+                "operationId": "GetComparisonShoppingPagesListings",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "condition",
+                        "in": "query",
+                        "description": "Condition of the listing"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "per_page",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/comparison_shopping_pages\/{id}\/reviews": {
+            "get": {
+                "summary": "Get Comparison Shopping Pages Reviews",
+                "description": "View reviews of a comparison shopping page",
+                "operationId": "GetComparisonShoppingPagesReviews",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/conversations\/{conversation_id}\/offer": {
+            "post": {
+                "summary": "Post Conversations Conversation Offer",
+                "description": "Make an offer to the other participant in the conversation",
+                "operationId": "PostConversationsConversationOffer",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "conversation_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "the content of the request"
+                    }
+                ]
+            }
+        },
+        "\/conversations\/{id}\/offer": {
+            "post": {
+                "summary": "Post Conversations Offer",
+                "description": "Make an offer to the other participant in the conversation",
+                "operationId": "PostConversationsOffer",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "the content of the request"
+                    }
+                ]
+            }
+        },
+        "\/countries": {
+            "get": {
+                "summary": "Get Countries",
+                "description": "Retrieve a list of country codes with corresponding subregions",
+                "operationId": "GetCountries",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/csps": {
+            "get": {
+                "summary": "Get Csps",
+                "description": "Returns a set of comparison shopping pages based on the current params",
+                "operationId": "GetCsps",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/csps\/categories": {
+            "get": {
+                "summary": "Get Csps Categories",
+                "description": "Get csps categories.",
+                "operationId": "GetCspsCategories",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/curated_sets\/{slug}": {
+            "get": {
+                "summary": "Get Curated Sets Slug",
+                "description": "Get curated sets slug.",
+                "operationId": "GetCuratedSetsSlug",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "slug",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/currencies\/display": {
+            "get": {
+                "summary": "Get Currencies Display",
+                "description": "List of supported display currencies for browsing listings",
+                "operationId": "GetCurrenciesDisplay",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/currencies\/listing": {
+            "get": {
+                "summary": "Get Currencies Listing",
+                "description": "List of supported listing currencies for shops",
+                "operationId": "GetCurrenciesListing",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/feedback\/{feedback_id}": {
+            "get": {
+                "summary": "Get Feedback Feedback",
+                "description": "Get feedback feedback.",
+                "operationId": "GetFeedbackFeedback",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "feedback_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/handpicked\/{slug}": {
+            "get": {
+                "summary": "Get Handpicked Slug",
+                "description": "Get results from a handpicked collection",
+                "operationId": "GetHandpickedSlug",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "slug",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "query",
+                        "in": "query",
+                        "description": "What's being searched for"
+                    },
+                    {
+                        "name": "auction_price_max",
+                        "in": "query",
+                        "description": "Maximum current auction price"
+                    },
+                    {
+                        "name": "category",
+                        "in": "query",
+                        "description": "Category slug from \/api\/categories"
+                    },
+                    {
+                        "name": "product_type",
+                        "in": "query",
+                        "description": "Product type slug from \/api\/categories"
+                    },
+                    {
+                        "name": "conditions",
+                        "in": "query",
+                        "description": "Condition: all,new,b-stock,used,non-functioning"
+                    },
+                    {
+                        "name": "decade",
+                        "in": "query",
+                        "description": "Decade: e.g. 1970s, early 70s"
+                    },
+                    {
+                        "name": "finish",
+                        "in": "query",
+                        "description": "Visual finish of the item, common for guitars"
+                    },
+                    {
+                        "name": "handmade",
+                        "in": "query",
+                        "description": "Handmade items only"
+                    },
+                    {
+                        "name": "item_city",
+                        "in": "query",
+                        "description": "City where item is located"
+                    },
+                    {
+                        "name": "item_country",
+                        "in": "query",
+                        "description": "DEPRECATED - Country code where item is located"
+                    },
+                    {
+                        "name": "item_region",
+                        "in": "query",
+                        "description": "Country code where item is located"
+                    },
+                    {
+                        "name": "item_state",
+                        "in": "query",
+                        "description": "State or region code where item is located"
+                    },
+                    {
+                        "name": "make",
+                        "in": "query",
+                        "description": "Make(s)\/brand of item (e.g. Fender). Can take a single value or an array."
+                    },
+                    {
+                        "name": "model",
+                        "in": "query",
+                        "description": "Model of item (e.g. Stratocaster)"
+                    },
+                    {
+                        "name": "must_not",
+                        "in": "query",
+                        "description": "Search term negation. If you want to exclude a term, add it here"
+                    },
+                    {
+                        "name": "price_max",
+                        "in": "query",
+                        "description": "Maximum price of search results (USD)"
+                    },
+                    {
+                        "name": "price_min",
+                        "in": "query",
+                        "description": "Minimum price of search results (USD)"
+                    },
+                    {
+                        "name": "currency",
+                        "in": "query",
+                        "description": "The currency to be used for the price filters"
+                    },
+                    {
+                        "name": "year_max",
+                        "in": "query",
+                        "description": "Maximum year of manufacture"
+                    },
+                    {
+                        "name": "year_min",
+                        "in": "query",
+                        "description": "Minumum year of manufacture"
+                    },
+                    {
+                        "name": "accepts_gift_cards",
+                        "in": "query",
+                        "description": "If true, include only items that accept gift cards"
+                    },
+                    {
+                        "name": "preferred_seller",
+                        "in": "query",
+                        "description": "If true, include only items by Reverb Preferred Sellers"
+                    },
+                    {
+                        "name": "shop",
+                        "in": "query",
+                        "description": "Slug of shop to search"
+                    },
+                    {
+                        "name": "shop_id",
+                        "in": "query",
+                        "description": "ID of shop to search"
+                    },
+                    {
+                        "name": "listing_type",
+                        "in": "query",
+                        "description": "Type of listing: auctions,offers"
+                    },
+                    {
+                        "name": "ships_to",
+                        "in": "query",
+                        "description": "Limit search to items that ship to this country code"
+                    },
+                    {
+                        "name": "exclude_auctions",
+                        "in": "query",
+                        "description": "If true, exclude auctions"
+                    },
+                    {
+                        "name": "accepts_payment_plans",
+                        "in": "query",
+                        "description": "If true, only show items that can be purchased with a payment plan"
+                    },
+                    {
+                        "name": "watchers_count_min",
+                        "in": "query",
+                        "description": "Minimum number of watchers (used to find popular items)"
+                    },
+                    {
+                        "name": "not_ids",
+                        "in": "query",
+                        "description": "Listing ID negation. If you want to exclude a listing, add it here."
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "per_page",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/listing_conditions": {
+            "get": {
+                "summary": "Get Listing Conditions",
+                "description": "List of supported product conditions",
+                "operationId": "GetListingConditions",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/listings": {
+            "get": {
+                "summary": "Get Listings",
+                "description": "Default search of listings includes only used & handmade. Add a filter to view all listings or use the \/listings\/all endpoint.",
+                "operationId": "GetListings",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "query",
+                        "in": "query",
+                        "description": "What's being searched for"
+                    },
+                    {
+                        "name": "auction_price_max",
+                        "in": "query",
+                        "description": "Maximum current auction price"
+                    },
+                    {
+                        "name": "category",
+                        "in": "query",
+                        "description": "Category slug from \/api\/categories"
+                    },
+                    {
+                        "name": "product_type",
+                        "in": "query",
+                        "description": "Product type slug from \/api\/categories"
+                    },
+                    {
+                        "name": "conditions",
+                        "in": "query",
+                        "description": "Condition: all,new,b-stock,used,non-functioning"
+                    },
+                    {
+                        "name": "decade",
+                        "in": "query",
+                        "description": "Decade: e.g. 1970s, early 70s"
+                    },
+                    {
+                        "name": "finish",
+                        "in": "query",
+                        "description": "Visual finish of the item, common for guitars"
+                    },
+                    {
+                        "name": "handmade",
+                        "in": "query",
+                        "description": "Handmade items only"
+                    },
+                    {
+                        "name": "item_city",
+                        "in": "query",
+                        "description": "City where item is located"
+                    },
+                    {
+                        "name": "item_country",
+                        "in": "query",
+                        "description": "DEPRECATED - Country code where item is located"
+                    },
+                    {
+                        "name": "item_region",
+                        "in": "query",
+                        "description": "Country code where item is located"
+                    },
+                    {
+                        "name": "item_state",
+                        "in": "query",
+                        "description": "State or region code where item is located"
+                    },
+                    {
+                        "name": "make",
+                        "in": "query",
+                        "description": "Make(s)\/brand of item (e.g. Fender). Can take a single value or an array."
+                    },
+                    {
+                        "name": "model",
+                        "in": "query",
+                        "description": "Model of item (e.g. Stratocaster)"
+                    },
+                    {
+                        "name": "must_not",
+                        "in": "query",
+                        "description": "Search term negation. If you want to exclude a term, add it here"
+                    },
+                    {
+                        "name": "price_max",
+                        "in": "query",
+                        "description": "Maximum price of search results (USD)"
+                    },
+                    {
+                        "name": "price_min",
+                        "in": "query",
+                        "description": "Minimum price of search results (USD)"
+                    },
+                    {
+                        "name": "currency",
+                        "in": "query",
+                        "description": "The currency to be used for the price filters"
+                    },
+                    {
+                        "name": "year_max",
+                        "in": "query",
+                        "description": "Maximum year of manufacture"
+                    },
+                    {
+                        "name": "year_min",
+                        "in": "query",
+                        "description": "Minumum year of manufacture"
+                    },
+                    {
+                        "name": "accepts_gift_cards",
+                        "in": "query",
+                        "description": "If true, include only items that accept gift cards"
+                    },
+                    {
+                        "name": "preferred_seller",
+                        "in": "query",
+                        "description": "If true, include only items by Reverb Preferred Sellers"
+                    },
+                    {
+                        "name": "shop",
+                        "in": "query",
+                        "description": "Slug of shop to search"
+                    },
+                    {
+                        "name": "shop_id",
+                        "in": "query",
+                        "description": "ID of shop to search"
+                    },
+                    {
+                        "name": "listing_type",
+                        "in": "query",
+                        "description": "Type of listing: auctions,offers"
+                    },
+                    {
+                        "name": "ships_to",
+                        "in": "query",
+                        "description": "Limit search to items that ship to this country code"
+                    },
+                    {
+                        "name": "exclude_auctions",
+                        "in": "query",
+                        "description": "If true, exclude auctions"
+                    },
+                    {
+                        "name": "accepts_payment_plans",
+                        "in": "query",
+                        "description": "If true, only show items that can be purchased with a payment plan"
+                    },
+                    {
+                        "name": "watchers_count_min",
+                        "in": "query",
+                        "description": "Minimum number of watchers (used to find popular items)"
+                    },
+                    {
+                        "name": "not_ids",
+                        "in": "query",
+                        "description": "Listing ID negation. If you want to exclude a listing, add it here."
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "per_page",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Post Listings",
+                "description": "Create a listing",
+                "operationId": "PostListings",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "the content of the request"
+                    }
+                ]
+            }
+        },
+        "\/listings\/all": {
+            "get": {
+                "summary": "Get Listings All",
+                "description": "All listings including used, handmade, and brand new",
+                "operationId": "GetListingsAll",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "query",
+                        "in": "query",
+                        "description": "What's being searched for"
+                    },
+                    {
+                        "name": "auction_price_max",
+                        "in": "query",
+                        "description": "Maximum current auction price"
+                    },
+                    {
+                        "name": "category",
+                        "in": "query",
+                        "description": "Category slug from \/api\/categories"
+                    },
+                    {
+                        "name": "product_type",
+                        "in": "query",
+                        "description": "Product type slug from \/api\/categories"
+                    },
+                    {
+                        "name": "conditions",
+                        "in": "query",
+                        "description": "Condition: all,new,b-stock,used,non-functioning"
+                    },
+                    {
+                        "name": "decade",
+                        "in": "query",
+                        "description": "Decade: e.g. 1970s, early 70s"
+                    },
+                    {
+                        "name": "finish",
+                        "in": "query",
+                        "description": "Visual finish of the item, common for guitars"
+                    },
+                    {
+                        "name": "handmade",
+                        "in": "query",
+                        "description": "Handmade items only"
+                    },
+                    {
+                        "name": "item_city",
+                        "in": "query",
+                        "description": "City where item is located"
+                    },
+                    {
+                        "name": "item_country",
+                        "in": "query",
+                        "description": "DEPRECATED - Country code where item is located"
+                    },
+                    {
+                        "name": "item_region",
+                        "in": "query",
+                        "description": "Country code where item is located"
+                    },
+                    {
+                        "name": "item_state",
+                        "in": "query",
+                        "description": "State or region code where item is located"
+                    },
+                    {
+                        "name": "make",
+                        "in": "query",
+                        "description": "Make(s)\/brand of item (e.g. Fender). Can take a single value or an array."
+                    },
+                    {
+                        "name": "model",
+                        "in": "query",
+                        "description": "Model of item (e.g. Stratocaster)"
+                    },
+                    {
+                        "name": "must_not",
+                        "in": "query",
+                        "description": "Search term negation. If you want to exclude a term, add it here"
+                    },
+                    {
+                        "name": "price_max",
+                        "in": "query",
+                        "description": "Maximum price of search results (USD)"
+                    },
+                    {
+                        "name": "price_min",
+                        "in": "query",
+                        "description": "Minimum price of search results (USD)"
+                    },
+                    {
+                        "name": "currency",
+                        "in": "query",
+                        "description": "The currency to be used for the price filters"
+                    },
+                    {
+                        "name": "year_max",
+                        "in": "query",
+                        "description": "Maximum year of manufacture"
+                    },
+                    {
+                        "name": "year_min",
+                        "in": "query",
+                        "description": "Minumum year of manufacture"
+                    },
+                    {
+                        "name": "accepts_gift_cards",
+                        "in": "query",
+                        "description": "If true, include only items that accept gift cards"
+                    },
+                    {
+                        "name": "preferred_seller",
+                        "in": "query",
+                        "description": "If true, include only items by Reverb Preferred Sellers"
+                    },
+                    {
+                        "name": "shop",
+                        "in": "query",
+                        "description": "Slug of shop to search"
+                    },
+                    {
+                        "name": "shop_id",
+                        "in": "query",
+                        "description": "ID of shop to search"
+                    },
+                    {
+                        "name": "listing_type",
+                        "in": "query",
+                        "description": "Type of listing: auctions,offers"
+                    },
+                    {
+                        "name": "ships_to",
+                        "in": "query",
+                        "description": "Limit search to items that ship to this country code"
+                    },
+                    {
+                        "name": "exclude_auctions",
+                        "in": "query",
+                        "description": "If true, exclude auctions"
+                    },
+                    {
+                        "name": "accepts_payment_plans",
+                        "in": "query",
+                        "description": "If true, only show items that can be purchased with a payment plan"
+                    },
+                    {
+                        "name": "watchers_count_min",
+                        "in": "query",
+                        "description": "Minimum number of watchers (used to find popular items)"
+                    },
+                    {
+                        "name": "not_ids",
+                        "in": "query",
+                        "description": "Listing ID negation. If you want to exclude a listing, add it here."
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "per_page",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/listings\/facets\/seller_location": {
+            "get": {
+                "summary": "Get Listings Facets Seller Location",
+                "description": "Get listings facets seller location.",
+                "operationId": "GetListingsFacetsSellerLocation",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/listings\/{id}\/negotiation": {
+            "get": {
+                "summary": "Get Listings Negotiation",
+                "description": "Returns the latest negotiation for the requesting user given a listing id",
+                "operationId": "GetListingsNegotiation",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/listings\/{id}\/offer": {
+            "post": {
+                "summary": "Post Listings Offer",
+                "description": "Make an offer to the seller of a listing",
+                "operationId": "PostListingsOffer",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "the content of the request"
+                    }
+                ]
+            }
+        },
+        "\/listings\/{listing_id}\/bump": {
+            "get": {
+                "summary": "Get Listings Listing Bump",
+                "description": "View available bump tiers and stats for a listing",
+                "operationId": "GetListingsListingBump",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "listing_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/listings\/{listing_id}\/bump\/{budget_type}": {
+            "post": {
+                "summary": "Post Listings Listing Bump Budget Type",
+                "description": "Post listings listing bump budget type.",
+                "operationId": "PostListingsListingBumpBudgetType",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "listing_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "budget_type",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/listings\/{listing_id}\/conversations": {
+            "post": {
+                "summary": "Post Listings Listing Conversations",
+                "description": "Post listings listing conversations.",
+                "operationId": "PostListingsListingConversations",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "listing_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "the content of the request"
+                    }
+                ]
+            }
+        },
+        "\/listings\/{listing_id}\/images": {
+            "get": {
+                "summary": "Get Listings Listing Images",
+                "description": "View the images associated with a particular listing",
+                "operationId": "GetListingsListingImages",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "listing_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/listings\/{listing_id}\/images\/{image_id}": {
+            "delete": {
+                "summary": "Delete Listings Listing Images Image",
+                "description": "Delete listings listing images image.",
+                "operationId": "DeleteListingsListingImagesImage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "listing_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "image_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/listings\/{listing_id}\/product_bundle": {
+            "get": {
+                "summary": "Get Listings Listing Product Bundle",
+                "description": "Find a product bundle attached to a listing",
+                "operationId": "GetListingsListingProductBundle",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "listing_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "for_seller",
+                        "in": "query",
+                        "description": "Pass to see non-live bundles as the seller"
+                    }
+                ]
+            }
+        },
+        "\/listings\/{listing_id}\/sales": {
+            "get": {
+                "summary": "Get Listings Listing Sales",
+                "description": "See all sales that include a listing.",
+                "operationId": "GetListingsListingSales",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "listing_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/listings\/{slug}": {
+            "delete": {
+                "summary": "Delete Listings Slug",
+                "description": "Delete a draft listing. Cannot be used on non-drafts.",
+                "operationId": "DeleteListingsSlug",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "slug",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get Listings Slug",
+                "description": "Get listings slug.",
+                "operationId": "GetListingsSlug",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "slug",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Put Listings Slug",
+                "description": "Put listings slug.",
+                "operationId": "PutListingsSlug",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "slug",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "the content of the request"
+                    }
+                ]
+            }
+        },
+        "\/listings\/{slug}\/edit": {
+            "get": {
+                "summary": "Get Listings Slug Edit",
+                "description": "Get listings slug edit.",
+                "operationId": "GetListingsSlugEdit",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "slug",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/listings\/{slug}\/flag": {
+            "post": {
+                "summary": "Post Listings Slug Flag",
+                "description": "Flag a listing for inappropriate content or fraud",
+                "operationId": "PostListingsSlugFlag",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "slug",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "the content of the request"
+                    }
+                ]
+            }
+        },
+        "\/listings\/{slug}\/reviews": {
+            "get": {
+                "summary": "Get Listings Slug Reviews",
+                "description": "Get listings slug reviews.",
+                "operationId": "GetListingsSlugReviews",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "slug",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Post Listings Slug Reviews",
+                "description": "Create a review for a listing",
+                "operationId": "PostListingsSlugReviews",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "slug",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/listings\/{slug}\/similar_listings": {
+            "get": {
+                "summary": "Get Listings Slug Similar Listings",
+                "description": "Get listings slug similar listings.",
+                "operationId": "GetListingsSlugSimilarListings",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "slug",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/my\/account": {
+            "get": {
+                "summary": "Get My Account",
+                "description": "Get account details",
+                "operationId": "GetMyAccount",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "put": {
+                "summary": "Put My Account",
+                "description": "Update account details",
+                "operationId": "PutMyAccount",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "the content of the request"
+                    }
+                ]
+            }
+        },
+        "\/my\/addresses": {
+            "get": {
+                "summary": "Get My Addresses",
+                "description": "See all addresses in your address book",
+                "operationId": "GetMyAddresses",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Post My Addresses",
+                "description": "Create a new address in your address book",
+                "operationId": "PostMyAddresses",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/my\/addresses\/{address_id}": {
+            "delete": {
+                "summary": "Delete My Addresses Address",
+                "description": "Delete an existing address in your address book",
+                "operationId": "DeleteMyAddressesAddress",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "address_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Put My Addresses Address",
+                "description": "Update an existing address in your address book",
+                "operationId": "PutMyAddressesAddress",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "address_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/my\/conversations": {
+            "get": {
+                "summary": "Get My Conversations",
+                "description": "Get a list of your conversations",
+                "operationId": "GetMyConversations",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "search",
+                        "in": "query",
+                        "description": "Query string to search conversations by"
+                    },
+                    {
+                        "name": "unread_only",
+                        "in": "query",
+                        "description": "Show unread conversations only"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "per_page",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Post My Conversations",
+                "description": "Post my conversations.",
+                "operationId": "PostMyConversations",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "the content of the request"
+                    }
+                ]
+            }
+        },
+        "\/my\/conversations\/{conversation_id}\/messages": {
+            "post": {
+                "summary": "Post My Conversations Conversation Messages",
+                "description": "Post my conversations conversation messages.",
+                "operationId": "PostMyConversationsConversationMessages",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "conversation_id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "the content of the request"
+                    }
+                ]
+            }
+        },
+        "\/my\/conversations\/{id}": {
+            "get": {
+                "summary": "Get My Conversations",
+                "description": "Display conversation details with messages in natural time order (oldest to newest)",
+                "operationId": "GetMyConversations",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Put My Conversations",
+                "description": "Mark a conversation read\/unread",
+                "operationId": "PutMyConversations",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "the content of the request"
+                    }
+                ]
+            }
+        },
+        "\/my\/counts": {
+            "get": {
+                "summary": "Get My Counts",
+                "description": "Get your actionable status counts",
+                "operationId": "GetMyCounts",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/my\/curated_set\/product\/{product_id}": {
+            "delete": {
+                "summary": "Delete My Curated Set Product Product",
+                "description": "Delete my curated set product product.",
+                "operationId": "DeleteMyCuratedSetProductProduct",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "product_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Post My Curated Set Product Product",
+                "description": "Post my curated set product product.",
+                "operationId": "PostMyCuratedSetProductProduct",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "product_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/my\/feed": {
+            "get": {
+                "summary": "Get My Feed",
+                "description": "Get listings from your feed",
+                "operationId": "GetMyFeed",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/my\/feed\/customize": {
+            "get": {
+                "summary": "Get My Feed Customize",
+                "description": "get your feed customization options",
+                "operationId": "GetMyFeedCustomize",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/my\/feed\/grid": {
+            "get": {
+                "summary": "Get My Feed Gr",
+                "description": "Get my feed gr.",
+                "operationId": "GetMyFeedGr",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/my\/feedback\/received": {
+            "get": {
+                "summary": "Get My Feedback Received",
+                "description": "List of received feedback",
+                "operationId": "GetMyFeedbackReceived",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/my\/feedback\/sent": {
+            "get": {
+                "summary": "Get My Feedback Sent",
+                "description": "List of sent feedback",
+                "operationId": "GetMyFeedbackSent",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/my\/follows": {
+            "get": {
+                "summary": "Get My Follows",
+                "description": "See what the user is following",
+                "operationId": "GetMyFollows",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/my\/follows\/articles": {
+            "get": {
+                "summary": "Get My Follows Articles",
+                "description": "Returns a user's ArticleCategoryFollows",
+                "operationId": "GetMyFollowsArticles",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Post My Follows Articles",
+                "description": "Set a user's ArticleCategoryFollows",
+                "operationId": "PostMyFollowsArticles",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "the content of the request"
+                    }
+                ]
+            }
+        },
+        "\/my\/follows\/brands\/{slug}": {
+            "delete": {
+                "summary": "Delete My Follows Brands Slug",
+                "description": "Delete my follows brands slug.",
+                "operationId": "DeleteMyFollowsBrandsSlug",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "slug",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get My Follows Brands Slug",
+                "description": "Get my follows brands slug.",
+                "operationId": "GetMyFollowsBrandsSlug",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "slug",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Post My Follows Brands Slug",
+                "description": "Post my follows brands slug.",
+                "operationId": "PostMyFollowsBrandsSlug",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "slug",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/my\/follows\/categories\/{category}\/{subcategory}": {
+            "delete": {
+                "summary": "Delete My Follows Categories Category Subcategory",
+                "description": "Delete my follows categories category subcategory.",
+                "operationId": "DeleteMyFollowsCategoriesCategorySubcategory",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "category",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "subcategory",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get My Follows Categories Category Subcategory",
+                "description": "Get my follows categories category subcategory.",
+                "operationId": "GetMyFollowsCategoriesCategorySubcategory",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "category",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "subcategory",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Post My Follows Categories Category Subcategory",
+                "description": "Post my follows categories category subcategory.",
+                "operationId": "PostMyFollowsCategoriesCategorySubcategory",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "category",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "subcategory",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/my\/follows\/categories\/{identifier}": {
+            "delete": {
+                "summary": "Delete My Follows Categories Entifier",
+                "description": "Delete my follows categories entifier.",
+                "operationId": "DeleteMyFollowsCategoriesEntifier",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "identifier",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get My Follows Categories Entifier",
+                "description": "Get my follows categories entifier.",
+                "operationId": "GetMyFollowsCategoriesEntifier",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "identifier",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Post My Follows Categories Entifier",
+                "description": "Post my follows categories entifier.",
+                "operationId": "PostMyFollowsCategoriesEntifier",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "identifier",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/my\/follows\/collections\/{slug}": {
+            "delete": {
+                "summary": "Delete My Follows Collections Slug",
+                "description": "Delete my follows collections slug.",
+                "operationId": "DeleteMyFollowsCollectionsSlug",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "slug",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get My Follows Collections Slug",
+                "description": "Get my follows collections slug.",
+                "operationId": "GetMyFollowsCollectionsSlug",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "slug",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Post My Follows Collections Slug",
+                "description": "Post my follows collections slug.",
+                "operationId": "PostMyFollowsCollectionsSlug",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "slug",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/my\/follows\/handpicked\/{slug}": {
+            "delete": {
+                "summary": "Delete My Follows Handpicked Slug",
+                "description": "Delete my follows handpicked slug.",
+                "operationId": "DeleteMyFollowsHandpickedSlug",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "slug",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get My Follows Handpicked Slug",
+                "description": "Follow status for a handpicked collection",
+                "operationId": "GetMyFollowsHandpickedSlug",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "slug",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Post My Follows Handpicked Slug",
+                "description": "Post my follows handpicked slug.",
+                "operationId": "PostMyFollowsHandpickedSlug",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "slug",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/my\/follows\/search": {
+            "get": {
+                "summary": "Get My Follows Search",
+                "description": "Follow status for a search",
+                "operationId": "GetMyFollowsSearch",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Post My Follows Search",
+                "description": "Post my follows search.",
+                "operationId": "PostMyFollowsSearch",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "the content of the request"
+                    }
+                ]
+            }
+        },
+        "\/my\/follows\/shops\/{slug}": {
+            "delete": {
+                "summary": "Delete My Follows Shops Slug",
+                "description": "Delete my follows shops slug.",
+                "operationId": "DeleteMyFollowsShopsSlug",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "slug",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get My Follows Shops Slug",
+                "description": "Get my follows shops slug.",
+                "operationId": "GetMyFollowsShopsSlug",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "slug",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Post My Follows Shops Slug",
+                "description": "Post my follows shops slug.",
+                "operationId": "PostMyFollowsShopsSlug",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "slug",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/my\/follows\/{follow_id}": {
+            "delete": {
+                "summary": "Delete My Follows Follow",
+                "description": "Delete my follows follow.",
+                "operationId": "DeleteMyFollowsFollow",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "follow_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/my\/follows\/{follow_id}\/alert": {
+            "delete": {
+                "summary": "Delete My Follows Follow Alert",
+                "description": "Delete my follows follow alert.",
+                "operationId": "DeleteMyFollowsFollowAlert",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "follow_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Post My Follows Follow Alert",
+                "description": "Post my follows follow alert.",
+                "operationId": "PostMyFollowsFollowAlert",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "follow_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/my\/listings": {
+            "get": {
+                "summary": "Get My Listings",
+                "description": "Retrieve a list of live listings for the seller. To search all listings specify state=all",
+                "operationId": "GetMyListings",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "query",
+                        "in": "query",
+                        "description": "What's being searched for"
+                    },
+                    {
+                        "name": "auction_price_max",
+                        "in": "query",
+                        "description": "Maximum current auction price"
+                    },
+                    {
+                        "name": "category",
+                        "in": "query",
+                        "description": "Category slug from \/api\/categories"
+                    },
+                    {
+                        "name": "product_type",
+                        "in": "query",
+                        "description": "Product type slug from \/api\/categories"
+                    },
+                    {
+                        "name": "conditions",
+                        "in": "query",
+                        "description": "Condition: all,new,b-stock,used,non-functioning"
+                    },
+                    {
+                        "name": "decade",
+                        "in": "query",
+                        "description": "Decade: e.g. 1970s, early 70s"
+                    },
+                    {
+                        "name": "finish",
+                        "in": "query",
+                        "description": "Visual finish of the item, common for guitars"
+                    },
+                    {
+                        "name": "handmade",
+                        "in": "query",
+                        "description": "Handmade items only"
+                    },
+                    {
+                        "name": "item_city",
+                        "in": "query",
+                        "description": "City where item is located"
+                    },
+                    {
+                        "name": "item_country",
+                        "in": "query",
+                        "description": "DEPRECATED - Country code where item is located"
+                    },
+                    {
+                        "name": "item_region",
+                        "in": "query",
+                        "description": "Country code where item is located"
+                    },
+                    {
+                        "name": "item_state",
+                        "in": "query",
+                        "description": "State or region code where item is located"
+                    },
+                    {
+                        "name": "make",
+                        "in": "query",
+                        "description": "Make(s)\/brand of item (e.g. Fender). Can take a single value or an array."
+                    },
+                    {
+                        "name": "model",
+                        "in": "query",
+                        "description": "Model of item (e.g. Stratocaster)"
+                    },
+                    {
+                        "name": "must_not",
+                        "in": "query",
+                        "description": "Search term negation. If you want to exclude a term, add it here"
+                    },
+                    {
+                        "name": "price_max",
+                        "in": "query",
+                        "description": "Maximum price of search results (USD)"
+                    },
+                    {
+                        "name": "price_min",
+                        "in": "query",
+                        "description": "Minimum price of search results (USD)"
+                    },
+                    {
+                        "name": "currency",
+                        "in": "query",
+                        "description": "The currency to be used for the price filters"
+                    },
+                    {
+                        "name": "year_max",
+                        "in": "query",
+                        "description": "Maximum year of manufacture"
+                    },
+                    {
+                        "name": "year_min",
+                        "in": "query",
+                        "description": "Minumum year of manufacture"
+                    },
+                    {
+                        "name": "accepts_gift_cards",
+                        "in": "query",
+                        "description": "If true, include only items that accept gift cards"
+                    },
+                    {
+                        "name": "preferred_seller",
+                        "in": "query",
+                        "description": "If true, include only items by Reverb Preferred Sellers"
+                    },
+                    {
+                        "name": "shop",
+                        "in": "query",
+                        "description": "Slug of shop to search"
+                    },
+                    {
+                        "name": "shop_id",
+                        "in": "query",
+                        "description": "ID of shop to search"
+                    },
+                    {
+                        "name": "listing_type",
+                        "in": "query",
+                        "description": "Type of listing: auctions,offers"
+                    },
+                    {
+                        "name": "ships_to",
+                        "in": "query",
+                        "description": "Limit search to items that ship to this country code"
+                    },
+                    {
+                        "name": "exclude_auctions",
+                        "in": "query",
+                        "description": "If true, exclude auctions"
+                    },
+                    {
+                        "name": "accepts_payment_plans",
+                        "in": "query",
+                        "description": "If true, only show items that can be purchased with a payment plan"
+                    },
+                    {
+                        "name": "watchers_count_min",
+                        "in": "query",
+                        "description": "Minimum number of watchers (used to find popular items)"
+                    },
+                    {
+                        "name": "not_ids",
+                        "in": "query",
+                        "description": "Listing ID negation. If you want to exclude a listing, add it here."
+                    },
+                    {
+                        "name": "state",
+                        "in": "query",
+                        "description": "Available: [\"all\", \"draft\", \"ended\", \"live\", \"ordered\", \"sold_out\", \"suspended\", \"seller_unavailable\"]. Defaults to 'live'"
+                    },
+                    {
+                        "name": "sku",
+                        "in": "query",
+                        "description": "Find a listing by sku"
+                    }
+                ]
+            }
+        },
+        "\/my\/listings\/drafts": {
+            "get": {
+                "summary": "Get My Listings Drafts",
+                "description": "Retrieve a list your draft listings",
+                "operationId": "GetMyListingsDrafts",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "query",
+                        "in": "query",
+                        "description": "What's being searched for"
+                    },
+                    {
+                        "name": "auction_price_max",
+                        "in": "query",
+                        "description": "Maximum current auction price"
+                    },
+                    {
+                        "name": "category",
+                        "in": "query",
+                        "description": "Category slug from \/api\/categories"
+                    },
+                    {
+                        "name": "product_type",
+                        "in": "query",
+                        "description": "Product type slug from \/api\/categories"
+                    },
+                    {
+                        "name": "conditions",
+                        "in": "query",
+                        "description": "Condition: all,new,b-stock,used,non-functioning"
+                    },
+                    {
+                        "name": "decade",
+                        "in": "query",
+                        "description": "Decade: e.g. 1970s, early 70s"
+                    },
+                    {
+                        "name": "finish",
+                        "in": "query",
+                        "description": "Visual finish of the item, common for guitars"
+                    },
+                    {
+                        "name": "handmade",
+                        "in": "query",
+                        "description": "Handmade items only"
+                    },
+                    {
+                        "name": "item_city",
+                        "in": "query",
+                        "description": "City where item is located"
+                    },
+                    {
+                        "name": "item_country",
+                        "in": "query",
+                        "description": "DEPRECATED - Country code where item is located"
+                    },
+                    {
+                        "name": "item_region",
+                        "in": "query",
+                        "description": "Country code where item is located"
+                    },
+                    {
+                        "name": "item_state",
+                        "in": "query",
+                        "description": "State or region code where item is located"
+                    },
+                    {
+                        "name": "make",
+                        "in": "query",
+                        "description": "Make(s)\/brand of item (e.g. Fender). Can take a single value or an array."
+                    },
+                    {
+                        "name": "model",
+                        "in": "query",
+                        "description": "Model of item (e.g. Stratocaster)"
+                    },
+                    {
+                        "name": "must_not",
+                        "in": "query",
+                        "description": "Search term negation. If you want to exclude a term, add it here"
+                    },
+                    {
+                        "name": "price_max",
+                        "in": "query",
+                        "description": "Maximum price of search results (USD)"
+                    },
+                    {
+                        "name": "price_min",
+                        "in": "query",
+                        "description": "Minimum price of search results (USD)"
+                    },
+                    {
+                        "name": "currency",
+                        "in": "query",
+                        "description": "The currency to be used for the price filters"
+                    },
+                    {
+                        "name": "year_max",
+                        "in": "query",
+                        "description": "Maximum year of manufacture"
+                    },
+                    {
+                        "name": "year_min",
+                        "in": "query",
+                        "description": "Minumum year of manufacture"
+                    },
+                    {
+                        "name": "accepts_gift_cards",
+                        "in": "query",
+                        "description": "If true, include only items that accept gift cards"
+                    },
+                    {
+                        "name": "preferred_seller",
+                        "in": "query",
+                        "description": "If true, include only items by Reverb Preferred Sellers"
+                    },
+                    {
+                        "name": "shop",
+                        "in": "query",
+                        "description": "Slug of shop to search"
+                    },
+                    {
+                        "name": "shop_id",
+                        "in": "query",
+                        "description": "ID of shop to search"
+                    },
+                    {
+                        "name": "listing_type",
+                        "in": "query",
+                        "description": "Type of listing: auctions,offers"
+                    },
+                    {
+                        "name": "ships_to",
+                        "in": "query",
+                        "description": "Limit search to items that ship to this country code"
+                    },
+                    {
+                        "name": "exclude_auctions",
+                        "in": "query",
+                        "description": "If true, exclude auctions"
+                    },
+                    {
+                        "name": "accepts_payment_plans",
+                        "in": "query",
+                        "description": "If true, only show items that can be purchased with a payment plan"
+                    },
+                    {
+                        "name": "watchers_count_min",
+                        "in": "query",
+                        "description": "Minimum number of watchers (used to find popular items)"
+                    },
+                    {
+                        "name": "not_ids",
+                        "in": "query",
+                        "description": "Listing ID negation. If you want to exclude a listing, add it here."
+                    }
+                ]
+            }
+        },
+        "\/my\/listings\/negotiations": {
+            "get": {
+                "summary": "Get My Listings Negotiations",
+                "description": "Get a list of active negotiations as a seller",
+                "operationId": "GetMyListingsNegotiations",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "per_page",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/my\/listings\/{slug}\/state\/end": {
+            "put": {
+                "summary": "Put My Listings Slug State End",
+                "description": "Put my listings slug state end.",
+                "operationId": "PutMyListingsSlugStateEnd",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "slug",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "the content of the request"
+                    }
+                ]
+            }
+        },
+        "\/my\/lists": {
+            "get": {
+                "summary": "Get My Lists",
+                "description": "Get a list of your lists (wishlist, watch list, etc)",
+                "operationId": "GetMyLists",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/my\/negotiations\/buying": {
+            "get": {
+                "summary": "Get My Negotiations Buying",
+                "description": "Get a list of active negotiations as a buyer",
+                "operationId": "GetMyNegotiationsBuying",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "per_page",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/my\/negotiations\/{id}": {
+            "get": {
+                "summary": "Get My Negotiations",
+                "description": "Get my negotiations.",
+                "operationId": "GetMyNegotiations",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/my\/negotiations\/{id}\/accept": {
+            "post": {
+                "summary": "Post My Negotiations Accept",
+                "description": "Post my negotiations accept.",
+                "operationId": "PostMyNegotiationsAccept",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "the content of the request"
+                    }
+                ]
+            }
+        },
+        "\/my\/negotiations\/{id}\/counter": {
+            "post": {
+                "summary": "Post My Negotiations Counter",
+                "description": "Post my negotiations counter.",
+                "operationId": "PostMyNegotiationsCounter",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "the content of the request"
+                    }
+                ]
+            }
+        },
+        "\/my\/negotiations\/{id}\/decline": {
+            "post": {
+                "summary": "Post My Negotiations Decline",
+                "description": "Post my negotiations decline.",
+                "operationId": "PostMyNegotiationsDecline",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/my\/orders\/awaiting_feedback": {
+            "get": {
+                "summary": "Get My Orders Awaiting Feedback",
+                "description": "List of orders that need feedback",
+                "operationId": "GetMyOrdersAwaitingFeedback",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/my\/orders\/buying\/all": {
+            "get": {
+                "summary": "Get My Orders Buying All",
+                "description": "Returns all orders, newest first.",
+                "operationId": "GetMyOrdersBuyingAll",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/my\/orders\/buying\/unpaid": {
+            "get": {
+                "summary": "Get My Orders Buying Unpa",
+                "description": "Returns unpaid orders, newest first.",
+                "operationId": "GetMyOrdersBuyingUnpa",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/my\/orders\/buying\/{id}": {
+            "get": {
+                "summary": "Get My Orders Buying",
+                "description": "Returns order details for a buyer",
+                "operationId": "GetMyOrdersBuying",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/my\/orders\/buying\/{id}\/mark_received": {
+            "post": {
+                "summary": "Post My Orders Buying Mark Received",
+                "description": "Marks an order as received by the buyer",
+                "operationId": "PostMyOrdersBuyingMarkReceived",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/my\/orders\/selling\/all": {
+            "get": {
+                "summary": "Get My Orders Selling All",
+                "description": "Get all seller orders, newest first.",
+                "operationId": "GetMyOrdersSellingAll",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "created_start_date",
+                        "in": "query",
+                        "description": "Filter by date created in ISO8601 format - e.g: 2015-04-09T10:52:23-00:00"
+                    },
+                    {
+                        "name": "created_end_date",
+                        "in": "query",
+                        "description": "Filter by date created in ISO8601 format - e.g: 2015-04-09T10:52:23-00:00"
+                    },
+                    {
+                        "name": "updated_start_date",
+                        "in": "query",
+                        "description": "Filter by date modified in ISO8601 format - e.g: 2015-04-09T10:52:23-00:00"
+                    },
+                    {
+                        "name": "updated_end_date",
+                        "in": "query",
+                        "description": "Filter by date modified in ISO8601 format - e.g: 2015-04-09T10:52:23-00:00"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "per_page",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/my\/orders\/selling\/awaiting_shipment": {
+            "get": {
+                "summary": "Get My Orders Selling Awaiting Shipment",
+                "description": "Get seller orders awaiting shipment, newest first.",
+                "operationId": "GetMyOrdersSellingAwaitingShipment",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "created_start_date",
+                        "in": "query",
+                        "description": "Filter by date created in ISO8601 format - e.g: 2015-04-09T10:52:23-00:00"
+                    },
+                    {
+                        "name": "created_end_date",
+                        "in": "query",
+                        "description": "Filter by date created in ISO8601 format - e.g: 2015-04-09T10:52:23-00:00"
+                    },
+                    {
+                        "name": "updated_start_date",
+                        "in": "query",
+                        "description": "Filter by date modified in ISO8601 format - e.g: 2015-04-09T10:52:23-00:00"
+                    },
+                    {
+                        "name": "updated_end_date",
+                        "in": "query",
+                        "description": "Filter by date modified in ISO8601 format - e.g: 2015-04-09T10:52:23-00:00"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "per_page",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/my\/orders\/selling\/buyer_history\/{buyer_id}": {
+            "get": {
+                "summary": "Get My Orders Selling Buyer History Buyer",
+                "description": "Get my orders selling buyer history buyer.",
+                "operationId": "GetMyOrdersSellingBuyerHistoryBuyer",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "buyer_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/my\/orders\/selling\/unpaid": {
+            "get": {
+                "summary": "Get My Orders Selling Unpa",
+                "description": "Get unpaid seller orders, newest first.",
+                "operationId": "GetMyOrdersSellingUnpa",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "created_start_date",
+                        "in": "query",
+                        "description": "Filter by date created in ISO8601 format - e.g: 2015-04-09T10:52:23-00:00"
+                    },
+                    {
+                        "name": "created_end_date",
+                        "in": "query",
+                        "description": "Filter by date created in ISO8601 format - e.g: 2015-04-09T10:52:23-00:00"
+                    },
+                    {
+                        "name": "updated_start_date",
+                        "in": "query",
+                        "description": "Filter by date modified in ISO8601 format - e.g: 2015-04-09T10:52:23-00:00"
+                    },
+                    {
+                        "name": "updated_end_date",
+                        "in": "query",
+                        "description": "Filter by date modified in ISO8601 format - e.g: 2015-04-09T10:52:23-00:00"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "per_page",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/my\/orders\/selling\/{id}": {
+            "get": {
+                "summary": "Get My Orders Selling",
+                "description": "Returns order details for a seller",
+                "operationId": "GetMyOrdersSelling",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/my\/orders\/selling\/{id}\/mark_picked_up": {
+            "post": {
+                "summary": "Post My Orders Selling Mark Picked Up",
+                "description": "Post my orders selling mark picked up.",
+                "operationId": "PostMyOrdersSellingMarkPickedUp",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "the content of the request"
+                    }
+                ]
+            }
+        },
+        "\/my\/orders\/selling\/{id}\/ship": {
+            "post": {
+                "summary": "Post My Orders Selling Ship",
+                "description": "Post my orders selling ship.",
+                "operationId": "PostMyOrdersSellingShip",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "the content of the request"
+                    }
+                ]
+            }
+        },
+        "\/my\/orders\/selling\/{order_id}\/refund_requests": {
+            "post": {
+                "summary": "Post My Orders Selling Order Refund Requests",
+                "description": "Post my orders selling order refund requests.",
+                "operationId": "PostMyOrdersSellingOrderRefundRequests",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "order_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/my\/payments\/selling": {
+            "get": {
+                "summary": "Get My Payments Selling",
+                "description": "Get my payments selling.",
+                "operationId": "GetMyPaymentsSelling",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "per_page",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "created_start_date",
+                        "in": "query",
+                        "description": "Filter by date created in ISO8601 format - e.g: 2015-04-09T10:52:23-00:00"
+                    },
+                    {
+                        "name": "created_end_date",
+                        "in": "query",
+                        "description": "Filter by date created in ISO8601 format - e.g: 2015-04-09T10:52:23-00:00"
+                    },
+                    {
+                        "name": "updated_start_date",
+                        "in": "query",
+                        "description": "Filter by date modified in ISO8601 format - e.g: 2015-04-09T10:52:23-00:00"
+                    },
+                    {
+                        "name": "updated_end_date",
+                        "in": "query",
+                        "description": "Filter by date modified in ISO8601 format - e.g: 2015-04-09T10:52:23-00:00"
+                    },
+                    {
+                        "name": "order_id",
+                        "in": "query",
+                        "description": "Look up payments by order id"
+                    }
+                ]
+            }
+        },
+        "\/my\/payments\/selling\/{id}": {
+            "get": {
+                "summary": "Get My Payments Selling",
+                "description": "Get my payments selling.",
+                "operationId": "GetMyPaymentsSelling",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/my\/payouts": {
+            "get": {
+                "summary": "Get My Payouts",
+                "description": "Get a list of payouts",
+                "operationId": "GetMyPayouts",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/my\/payouts\/{id}\/line_items": {
+            "get": {
+                "summary": "Get My Payouts Line Items",
+                "description": "Read the line items of a payout",
+                "operationId": "GetMyPayoutsLineItems",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/my\/refund_requests\/selling": {
+            "get": {
+                "summary": "Get My Refund Requests Selling",
+                "description": "Get a list of refund requests as a seller",
+                "operationId": "GetMyRefundRequestsSelling",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/my\/refund_requests\/selling\/{id}": {
+            "put": {
+                "summary": "Put My Refund Requests Selling",
+                "description": "Update a refund request for a sold order",
+                "operationId": "PutMyRefundRequestsSelling",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/my\/viewed_listings": {
+            "get": {
+                "summary": "Get My Viewed Listings",
+                "description": "Get a list of your recently viewed listings.",
+                "operationId": "GetMyViewedListings",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/my\/wishlist": {
+            "get": {
+                "summary": "Get My Wishlist",
+                "description": "Get a list of wishlisted items",
+                "operationId": "GetMyWishlist",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/my\/wishlist\/{id}": {
+            "delete": {
+                "summary": "Delete My Wishlist",
+                "description": "Remove a listing from your wishlist",
+                "operationId": "DeleteMyWishlist",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Put My Wishlist",
+                "description": "Add a listing to your wishlist",
+                "operationId": "PutMyWishlist",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/orders\/{order_id}\/feedback\/buyer": {
+            "get": {
+                "summary": "Get Orders Order Feedback Buyer",
+                "description": "Feedback details for an order's buyer",
+                "operationId": "GetOrdersOrderFeedbackBuyer",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "order_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Post Orders Order Feedback Buyer",
+                "description": "Add feedback about an order's buyer",
+                "operationId": "PostOrdersOrderFeedbackBuyer",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "order_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/orders\/{order_id}\/feedback\/seller": {
+            "get": {
+                "summary": "Get Orders Order Feedback Seller",
+                "description": "Feedback details for an order's seller",
+                "operationId": "GetOrdersOrderFeedbackSeller",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "order_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Post Orders Order Feedback Seller",
+                "description": "Add feedback about an order's seller",
+                "operationId": "PostOrdersOrderFeedbackSeller",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "order_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/payment_methods": {
+            "get": {
+                "summary": "Get Payment Methods",
+                "description": "Get list of payment methods",
+                "operationId": "GetPaymentMethods",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/priceguide": {
+            "get": {
+                "summary": "Get Pricegue",
+                "description": "Search the Price Guide",
+                "operationId": "GetPricegue",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "query",
+                        "in": "query",
+                        "description": "What's being searched for"
+                    }
+                ]
+            }
+        },
+        "\/priceguide\/{id}": {
+            "get": {
+                "summary": "Get Pricegue",
+                "description": "Retrieve a Price Guide",
+                "operationId": "GetPricegue",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/priceguide\/{id}\/transactions": {
+            "get": {
+                "summary": "Get Pricegue Transactions",
+                "description": "Get a list of paginated transactions for a price guide.",
+                "operationId": "GetPricegueTransactions",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "condition",
+                        "in": "query",
+                        "description": "Condition of the listing"
+                    }
+                ]
+            }
+        },
+        "\/priceguide\/{id}\/transactions\/summary": {
+            "get": {
+                "summary": "Get Pricegue Transactions Summary",
+                "description": "Get a summary of transactions for a given price guide",
+                "operationId": "GetPricegueTransactionsSummary",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "number_of_months",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "condition",
+                        "in": "query",
+                        "description": "Condition of the listing"
+                    }
+                ]
+            }
+        },
+        "\/products\/reviews\/{id}": {
+            "get": {
+                "summary": "Get Products Reviews",
+                "description": "Get products reviews.",
+                "operationId": "GetProductsReviews",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Put Products Reviews",
+                "description": "Put products reviews.",
+                "operationId": "PutProductsReviews",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "the content of the request"
+                    }
+                ]
+            }
+        },
+        "\/products\/{slug}\/reviews": {
+            "get": {
+                "summary": "Get Products Slug Reviews",
+                "description": "View reviews of a comparison shopping page",
+                "operationId": "GetProductsSlugReviews",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "slug",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Post Products Slug Reviews",
+                "description": "Create a review for a product",
+                "operationId": "PostProductsSlugReviews",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "slug",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/sales\/reverb": {
+            "get": {
+                "summary": "Get Sales Reverb",
+                "description": "View upcoming and live Reverb official sales.",
+                "operationId": "GetSalesReverb",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/sales\/seller": {
+            "get": {
+                "summary": "Get Sales Seller",
+                "description": "View your created sales.",
+                "operationId": "GetSalesSeller",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/sales\/{sale_id}\/listings": {
+            "delete": {
+                "summary": "Delete Sales Sale Listings",
+                "description": "Remove a listing from a sale",
+                "operationId": "DeleteSalesSaleListings",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "sale_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Post Sales Sale Listings",
+                "description": "Post sales sale listings.",
+                "operationId": "PostSalesSaleListings",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "sale_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/sales\/{slug}": {
+            "get": {
+                "summary": "Get Sales Slug",
+                "description": "Get sales slug.",
+                "operationId": "GetSalesSlug",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "slug",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/shipping\/providers": {
+            "get": {
+                "summary": "Get Shipping Provers",
+                "description": "List of supported shipping providers",
+                "operationId": "GetShippingProvers",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/shipping\/regions": {
+            "get": {
+                "summary": "Get Shipping Regions",
+                "description": "Get shipping regions.",
+                "operationId": "GetShippingRegions",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/shop": {
+            "get": {
+                "summary": "Get Shop",
+                "description": "Get your own shop details",
+                "operationId": "GetShop",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "put": {
+                "summary": "Put Shop",
+                "description": "Update your shop profile",
+                "operationId": "PutShop",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "the content of the request"
+                    }
+                ]
+            }
+        },
+        "\/shop\/listing_conditions": {
+            "get": {
+                "summary": "Get Shop Listing Conditions",
+                "description": "List of supported product conditions",
+                "operationId": "GetShopListingConditions",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/shop\/payment_methods": {
+            "get": {
+                "summary": "Get Shop Payment Methods",
+                "description": "Get accepted payment methods",
+                "operationId": "GetShopPaymentMethods",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/shop\/vacation": {
+            "delete": {
+                "summary": "Delete Shop Vacation",
+                "description": "Disable vacation mode. All listings will be re-enabled.",
+                "operationId": "DeleteShopVacation",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "get": {
+                "summary": "Get Shop Vacation",
+                "description": "Returns shop vacation status",
+                "operationId": "GetShopVacation",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Post Shop Vacation",
+                "description": "Enable vacation mode. All listings will be unavailable until vacation mode is turned off.",
+                "operationId": "PostShopVacation",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/shops\/{id}\/storefronts": {
+            "get": {
+                "summary": "Get Shops Storefronts",
+                "description": "Get storefront details on a shop.",
+                "operationId": "GetShopsStorefronts",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/shops\/{shop_id}\/shipping_profiles": {
+            "get": {
+                "summary": "Get Shops Shop Shipping Profiles",
+                "description": "List of shipping profiles for your shop",
+                "operationId": "GetShopsShopShippingProfiles",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "shop_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/shops\/{slug}": {
+            "get": {
+                "summary": "Get Shops Slug",
+                "description": "Get details on a shop.",
+                "operationId": "GetShopsSlug",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "slug",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "include_listing_count",
+                        "in": "query",
+                        "description": "Include the live listing count in the response."
+                    }
+                ]
+            }
+        },
+        "\/shops\/{slug}\/feedback": {
+            "get": {
+                "summary": "Get Shops Slug Feedback",
+                "description": "Get shops slug feedback.",
+                "operationId": "GetShopsSlugFeedback",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "slug",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/shops\/{slug}\/feedback\/buyer": {
+            "get": {
+                "summary": "Get Shops Slug Feedback Buyer",
+                "description": "Get seller's feedback as a buyer",
+                "operationId": "GetShopsSlugFeedbackBuyer",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "slug",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/shops\/{slug}\/feedback\/seller": {
+            "get": {
+                "summary": "Get Shops Slug Feedback Seller",
+                "description": "Get seller's feedback as a seller",
+                "operationId": "GetShopsSlugFeedbackSeller",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "slug",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/wants": {
+            "get": {
+                "summary": "Get Wants",
+                "description": "A list of wanted items by the user",
+                "operationId": "GetWants",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/wants\/{id}": {
+            "delete": {
+                "summary": "Delete Wants",
+                "description": "Unmark an item wanted.",
+                "operationId": "DeleteWants",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Put Wants",
+                "description": "Mark an item wanted. Returns 200 on success or 422 on failure.",
+                "operationId": "PutWants",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/webhooks\/registrations": {
+            "get": {
+                "summary": "Get Webhooks Registrations",
+                "description": "Get webhooks registrations.",
+                "operationId": "GetWebhooksRegistrations",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Post Webhooks Registrations",
+                "description": "Post webhooks registrations.",
+                "operationId": "PostWebhooksRegistrations",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "the content of the request"
+                    }
+                ]
+            }
+        },
+        "\/webhooks\/registrations\/{id}": {
+            "delete": {
+                "summary": "Delete Webhooks Registrations",
+                "description": "Delete webhooks registrations.",
+                "operationId": "DeleteWebhooksRegistrations",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get Webhooks Registrations",
+                "description": "Get details of a webhook registration",
+                "operationId": "GetWebhooksRegistrations",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/accounts": {
+            "post": {
+                "summary": "Post Accounts",
+                "description": "Create an account.",
+                "operationId": "PostAccounts",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "the content of the request"
+                    }
+                ]
+            }
+        },
+        "\/articles\/featured": {
+            "get": {
+                "summary": "Get Articles Featured",
+                "description": "See featured Reverb blog posts",
+                "operationId": "GetArticlesFeatured",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/articles\/recently_featured": {
+            "get": {
+                "summary": "Get Articles Recently Featured",
+                "description": "Get articles recently featured.",
+                "operationId": "GetArticlesRecentlyFeatured",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/articles\/{slug}": {
+            "get": {
+                "summary": "Get Articles Slug",
+                "description": "Display a single article",
+                "operationId": "GetArticlesSlug",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "slug",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/articles\/{slug}\/related-listings": {
+            "get": {
+                "summary": "Get Articles Slug Related Listings",
+                "description": "Find listings related to an article",
+                "operationId": "GetArticlesSlugRelatedListings",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "slug",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/auth\/forgot_password": {
+            "post": {
+                "summary": "Post Auth Forgot Password",
+                "description": "Send a password reset email",
+                "operationId": "PostAuthForgotPassword",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "the content of the request"
+                    }
+                ]
+            }
+        },
+        "\/auth\/logout": {
+            "put": {
+                "summary": "Put Auth Logout",
+                "description": "Logout (primarily for mobile clients)",
+                "operationId": "PutAuthLogout",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "the content of the request"
+                    }
+                ]
+            }
+        },
+        "\/autosuggest": {
+            "get": {
+                "summary": "Get Autosuggest",
+                "description": "Autosuggest terms for searches",
+                "operationId": "GetAutosuggest",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/cart": {
+            "get": {
+                "summary": "Get Cart",
+                "description": "Get all cart items",
+                "operationId": "GetCart",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/cart\/move_to_watch_list\/{cart_item_id}": {
+            "post": {
+                "summary": "Post Cart Move To Watch List Cart Item",
+                "description": "Remove a cart item and add it to watch list",
+                "operationId": "PostCartMoveToWatchListCartItem",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "cart_item_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/cart\/{id}": {
+            "delete": {
+                "summary": "Delete Cart",
+                "description": "Remove a product from the cart",
+                "operationId": "DeleteCart",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Post Cart",
+                "description": "Add product to the cart",
+                "operationId": "PostCart",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Put Cart",
+                "description": "Update cart item details",
+                "operationId": "PutCart",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/collections": {
+            "get": {
+                "summary": "Get Collections",
+                "description": "List of curated collections",
+                "operationId": "GetCollections",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/collections\/{slug}": {
+            "get": {
+                "summary": "Get Collections Slug",
+                "description": "Get collections slug.",
+                "operationId": "GetCollectionsSlug",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "slug",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/my\/orders\/buying\/buying_history\/{seller_id}": {
+            "get": {
+                "summary": "Get My Orders Buying Buying History Seller",
+                "description": "Get my orders buying buying history seller.",
+                "operationId": "GetMyOrdersBuyingBuyingHistorySeller",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "seller_id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/shop\/stats": {
+            "get": {
+                "summary": "Get Shop Stats",
+                "description": "Get listings stats",
+                "operationId": "GetShopStats",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/shop\/stats\/activity": {
+            "get": {
+                "summary": "Get Shop Stats Activity",
+                "description": "Get shop activity for a particular time period",
+                "operationId": "GetShopStatsActivity",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "start_time",
+                        "in": "query",
+                        "description": "Filter by date in ISO8601 format - e.g: 2015-04-09T10:52:23-05:00"
+                    },
+                    {
+                        "name": "end_time",
+                        "in": "query",
+                        "description": "Filter by date in ISO8601 format - e.g: 2015-04-09T10:52:23-05:00"
+                    }
+                ]
+            }
+        },
+        "\/vinyl\/listings": {
+            "get": {
+                "summary": "Get Vinyl Listings",
+                "description": "Get vinyl listings.",
+                "operationId": "GetVinylListings",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "merchandising_uuid",
+                        "in": "query",
+                        "description": "Merchandising UUID of the release"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Post Vinyl Listings",
+                "description": "Post vinyl listings.",
+                "operationId": "PostVinylListings",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/vinyl\/listings\/{id}": {
+            "get": {
+                "summary": "Get Vinyl Listings",
+                "description": "Get vinyl listings.",
+                "operationId": "GetVinylListings",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": []
+    }
+}
