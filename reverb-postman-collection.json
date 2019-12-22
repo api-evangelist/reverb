@@ -1,5 +1,5 @@
 {
-    "id": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+    "id": "2993c1de03a17e93095b50d8a9f3622a",
     "name": "reverb",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "8a64c6925516b269d568f0569c11504a",
+            "id": "a55cdd863d8f8353befc48a939a1bfea",
             "name": "Get Articles",
             "url": "httpsapi.reverb.com\/api\/articles",
             "description": "Get articles.",
@@ -65,11 +65,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "45a73f03afc22a76b1d0f1ddc30e6ef5",
+            "id": "c830c614d7e4361da318da0db0d9a1c6",
             "name": "Get Categories",
             "url": "httpsapi.reverb.com\/api\/categories",
             "description": "List of supported product categories",
@@ -88,11 +88,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "646c9b5774b9ed5782258586436e7b96",
+            "id": "70c253e85f33b51c2fb061b3230392c8",
             "name": "Get Categories Flat",
             "url": "httpsapi.reverb.com\/api\/categories\/flat",
             "description": "Get categories flat.",
@@ -111,11 +111,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "769fd5913ec49e46cd6d55edd133d4c5",
+            "id": "539c202df556064449e2cd4b736a958e",
             "name": "Get Categories Taxonomy",
             "url": "httpsapi.reverb.com\/api\/categories\/taxonomy",
             "description": "Full taxonomy tree of categories including middle categories",
@@ -134,11 +134,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "e04808f329cc1941a5a0d052be3170b0",
+            "id": "159282a01ad7871db0caee13596ce398",
             "name": "Get Categories Product Type Category",
             "url": "httpsapi.reverb.com\/api\/categories\/{product_type}\/{category}",
             "description": "Get categories product type category.",
@@ -172,11 +172,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "ffaabbb9fffa4c0c6043beeb786e6fc3",
+            "id": "2e29207498a42a8e38324e8a9ae19149",
             "name": "Get Categories Uu",
             "url": "httpsapi.reverb.com\/api\/categories\/{uuid}",
             "description": "Get category details",
@@ -203,11 +203,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "c5bb77be0a2d4073ceef9ccb119aba19",
+            "id": "5af60eb88fca6e77f8fe292a0aa19299",
             "name": "Get Comparison Shopping Pages",
             "url": "httpsapi.reverb.com\/api\/comparison_shopping_pages",
             "description": "Returns a set of comparison shopping pages based on the current params",
@@ -226,11 +226,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "fa9506a815b815c5e3c975b84590176e",
+            "id": "755c8ed035e8fdda379d38ff80b73ae1",
             "name": "Get Comparison Shopping Pages Find",
             "url": "httpsapi.reverb.com\/api\/comparison_shopping_pages\/find",
             "description": "Get comparison shopping pages find.",
@@ -264,11 +264,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "d775f7916da58a8c818e8c8c3e98f2bf",
+            "id": "cc29b2dbbaeefa09dd95afc57e01add0",
             "name": "Get Comparison Shopping Pages",
             "url": "httpsapi.reverb.com\/api\/comparison_shopping_pages\/{id}",
             "description": "Get comparison shopping pages.",
@@ -295,11 +295,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "0299e63e8bcaf5ed4954001039634f72",
+            "id": "2159214f2133d40dbf8b7f5990beca81",
             "name": "Get Comparison Shopping Pages Listings",
             "url": "httpsapi.reverb.com\/api\/comparison_shopping_pages\/{id}\/listings",
             "description": "Return new or used listings for a comparison shopping page",
@@ -354,11 +354,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "275d24507fa7dfc7281234f77133f534",
+            "id": "b5c6b060f8815588cb7a1af7cd675317",
             "name": "Get Comparison Shopping Pages Reviews",
             "url": "httpsapi.reverb.com\/api\/comparison_shopping_pages\/{id}\/reviews",
             "description": "View reviews of a comparison shopping page",
@@ -385,11 +385,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "a8a2bea83e78d156e10879abed42929a",
+            "id": "ae45472e84d3649fe3106f55af1a3f40",
             "name": "Post Conversations Conversation Offer",
             "url": "httpsapi.reverb.com\/api\/conversations\/{conversation_id}\/offer",
             "description": "Make an offer to the other participant in the conversation",
@@ -423,11 +423,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "e26ed9a7eb4131d1779721fdccdaf3d0",
+            "id": "350471a3d7c2c35039e35b556413527d",
             "name": "Post Conversations Offer",
             "url": "httpsapi.reverb.com\/api\/conversations\/{id}\/offer",
             "description": "Make an offer to the other participant in the conversation",
@@ -461,11 +461,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "0af9b7f67bbc77f86044385d19ede10f",
+            "id": "db7681e04521a2452b4f89eb81eed82e",
             "name": "Get Countries",
             "url": "httpsapi.reverb.com\/api\/countries",
             "description": "Retrieve a list of country codes with corresponding subregions",
@@ -484,11 +484,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "a43857bca5b2724cbff73a9ef6173199",
+            "id": "726658679b7fe3cd445bf5cc306f92c0",
             "name": "Get Csps",
             "url": "httpsapi.reverb.com\/api\/csps",
             "description": "Returns a set of comparison shopping pages based on the current params",
@@ -507,11 +507,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "47ae0b27549591aa12002854aee55d31",
+            "id": "8db54156003ecc2042baefa2a370a45b",
             "name": "Get Csps Categories",
             "url": "httpsapi.reverb.com\/api\/csps\/categories",
             "description": "Get csps categories.",
@@ -530,11 +530,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "f8bc8dc809d51903ab19288b2ad72d24",
+            "id": "f6d0d1748fecdfe2e78a10acecfaf4df",
             "name": "Get Curated Sets Slug",
             "url": "httpsapi.reverb.com\/api\/curated_sets\/{slug}",
             "description": "Get curated sets slug.",
@@ -561,11 +561,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "e296b437b542cbb5b07abdc31d90f7bb",
+            "id": "3b47bceaf00083faea437e991ad284f3",
             "name": "Get Currencies Display",
             "url": "httpsapi.reverb.com\/api\/currencies\/display",
             "description": "List of supported display currencies for browsing listings",
@@ -584,11 +584,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "32a2b289fd05cba25d8e761d361da80b",
+            "id": "03f5a8255ff38ac351e19f0c24e35b40",
             "name": "Get Currencies Listing",
             "url": "httpsapi.reverb.com\/api\/currencies\/listing",
             "description": "List of supported listing currencies for shops",
@@ -607,11 +607,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "54fc881377b1a9a52cb800fd4613ac56",
+            "id": "0fd276c22542b4f984a9ebc4ec9f2052",
             "name": "Get Feedback Feedback",
             "url": "httpsapi.reverb.com\/api\/feedback\/{feedback_id}",
             "description": "Get feedback feedback.",
@@ -638,11 +638,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "bc6a3253de33c4bc92eee12d7b7f7d41",
+            "id": "0aa79554437e36cf0bcb7ab1652410ab",
             "name": "Get Handpicked Slug",
             "url": "httpsapi.reverb.com\/api\/handpicked\/{slug}",
             "description": "Get results from a handpicked collection",
@@ -900,11 +900,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "098575ca4323e30e0c2ce5fb1685c9cd",
+            "id": "5e4915615d753ee631c6de46c03f7a1b",
             "name": "Get Listing Conditions",
             "url": "httpsapi.reverb.com\/api\/listing_conditions",
             "description": "List of supported product conditions",
@@ -923,11 +923,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "68bf089098a5123ed95b4d1dc4a5e44d",
+            "id": "085c9e10dc29d28d8847a1f17b1d5a6c",
             "name": "Get Listings",
             "url": "httpsapi.reverb.com\/api\/listings",
             "description": "Default search of listings includes only used & handmade. Add a filter to view all listings or use the \/listings\/all endpoint.",
@@ -1178,11 +1178,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "6bce631d33713d32e84e0ccead8425a8",
+            "id": "605754e105032d2229bf6193afd536b5",
             "name": "Post Listings",
             "url": "httpsapi.reverb.com\/api\/listings",
             "description": "Create a listing",
@@ -1209,11 +1209,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "0115ee0163405ef22faf29baa747c4fe",
+            "id": "c252823c9c5485ff271b5456e1e1dbeb",
             "name": "Get Listings All",
             "url": "httpsapi.reverb.com\/api\/listings\/all",
             "description": "All listings including used, handmade, and brand new",
@@ -1464,11 +1464,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "c2ec8fd149cbc0deaa082f6c8d7da50b",
+            "id": "e8bc19f3aa3136674b00970820254a6e",
             "name": "Get Listings Facets Seller Location",
             "url": "httpsapi.reverb.com\/api\/listings\/facets\/seller_location",
             "description": "Get listings facets seller location.",
@@ -1487,11 +1487,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "83aff888f4826dc7874a96f9d1868953",
+            "id": "7e084eb12affc2cc09be3008da6fb7c4",
             "name": "Get Listings Negotiation",
             "url": "httpsapi.reverb.com\/api\/listings\/{id}\/negotiation",
             "description": "Returns the latest negotiation for the requesting user given a listing id",
@@ -1518,11 +1518,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "c3e2acd4a151b4af3e52963bfc811cb0",
+            "id": "6b707632c184133d0b44e1b5f5a4897c",
             "name": "Post Listings Offer",
             "url": "httpsapi.reverb.com\/api\/listings\/{id}\/offer",
             "description": "Make an offer to the seller of a listing",
@@ -1556,11 +1556,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "ab2b9c0a308442e02612f8ea51a2a206",
+            "id": "00fba2f286270f4ababe23f0e5e217c9",
             "name": "Get Listings Listing Bump",
             "url": "httpsapi.reverb.com\/api\/listings\/{listing_id}\/bump",
             "description": "View available bump tiers and stats for a listing",
@@ -1587,11 +1587,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "4d4534375a943dd7b9316e196be36f68",
+            "id": "6ab8a82211cb4466edd0bd6cb8a207a5",
             "name": "Post Listings Listing Bump Budget Type",
             "url": "httpsapi.reverb.com\/api\/listings\/{listing_id}\/bump\/{budget_type}",
             "description": "Post listings listing bump budget type.",
@@ -1625,11 +1625,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "5b4913ec050ba71ef6a5f20ec3367aa6",
+            "id": "5282c1cd38fb44f0be2e0f8d876d75b6",
             "name": "Post Listings Listing Conversations",
             "url": "httpsapi.reverb.com\/api\/listings\/{listing_id}\/conversations",
             "description": "Post listings listing conversations.",
@@ -1663,11 +1663,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "332b3e81ee0ae1ddc3cf7a0e8e9ec3b2",
+            "id": "fbd255765d7dba7832e7f5cba5c3d4c4",
             "name": "Get Listings Listing Images",
             "url": "httpsapi.reverb.com\/api\/listings\/{listing_id}\/images",
             "description": "View the images associated with a particular listing",
@@ -1694,11 +1694,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "bbd968a5cf6554d0d5d15f3062ff5334",
+            "id": "f55869b465921ffcf511fad2b248a632",
             "name": "Delete Listings Listing Images Image",
             "url": "httpsapi.reverb.com\/api\/listings\/{listing_id}\/images\/{image_id}",
             "description": "Delete listings listing images image.",
@@ -1732,11 +1732,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "a840057109e0fba48b97e8671608819b",
+            "id": "717a2e8aa37fd7c473437738d891d5d3",
             "name": "Get Listings Listing Product Bundle",
             "url": "httpsapi.reverb.com\/api\/listings\/{listing_id}\/product_bundle",
             "description": "Find a product bundle attached to a listing",
@@ -1770,11 +1770,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "4d6fb9339cb402f0b9a88bd4f1e3d258",
+            "id": "fb52cac2ec14bcf49c10cbcd82721199",
             "name": "Get Listings Listing Sales",
             "url": "httpsapi.reverb.com\/api\/listings\/{listing_id}\/sales",
             "description": "See all sales that include a listing.",
@@ -1801,11 +1801,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "b1f7f3592762a134c169583ce98c3db7",
+            "id": "1940efb3a84ebe2a8cdf56cc80d800d4",
             "name": "Delete Listings Slug",
             "url": "httpsapi.reverb.com\/api\/listings\/{slug}",
             "description": "Delete a draft listing. Cannot be used on non-drafts.",
@@ -1832,11 +1832,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "48482d453e931272af52bf04d8a18e23",
+            "id": "6c4809e3686464faa7e856f19c8c9ebf",
             "name": "Get Listings Slug",
             "url": "httpsapi.reverb.com\/api\/listings\/{slug}",
             "description": "Get listings slug.",
@@ -1863,11 +1863,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "1e7427bb0108cd22e6cfce42b8f39494",
+            "id": "fafa7fa4978754bfb4ed2edf073636a9",
             "name": "Put Listings Slug",
             "url": "httpsapi.reverb.com\/api\/listings\/{slug}",
             "description": "Put listings slug.",
@@ -1901,11 +1901,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "ae0fe3a49bc318dc6c533a1f5d7deeaf",
+            "id": "b809c59d16a982809e4eaa0620cf7257",
             "name": "Get Listings Slug Edit",
             "url": "httpsapi.reverb.com\/api\/listings\/{slug}\/edit",
             "description": "Get listings slug edit.",
@@ -1932,11 +1932,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "9f61a35e35116da76b24305a2ed3b737",
+            "id": "cf14dffee0538fb7b7592d32bb70d901",
             "name": "Post Listings Slug Flag",
             "url": "httpsapi.reverb.com\/api\/listings\/{slug}\/flag",
             "description": "Flag a listing for inappropriate content or fraud",
@@ -1970,11 +1970,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "e46b0a67f24230636015c5125533c903",
+            "id": "f808d8b1a418c9e1964c4107aa9cf3b6",
             "name": "Get Listings Slug Reviews",
             "url": "httpsapi.reverb.com\/api\/listings\/{slug}\/reviews",
             "description": "Get listings slug reviews.",
@@ -2001,11 +2001,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "a15da010c6e8b54982fdd9fe6e8c0132",
+            "id": "b2e55d4815115d414a06fee194934335",
             "name": "Post Listings Slug Reviews",
             "url": "httpsapi.reverb.com\/api\/listings\/{slug}\/reviews",
             "description": "Create a review for a listing",
@@ -2032,11 +2032,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "dd7c9ce4cef48faaaa6fe3f89f112247",
+            "id": "685153ec849b47a7aa65d6460a14ae2f",
             "name": "Get Listings Slug Similar Listings",
             "url": "httpsapi.reverb.com\/api\/listings\/{slug}\/similar_listings",
             "description": "Get listings slug similar listings.",
@@ -2063,11 +2063,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "7124021f9a515487ac012ed412fd1bbe",
+            "id": "bbb76daf3c844122e0a901900c082efa",
             "name": "Get My Account",
             "url": "httpsapi.reverb.com\/api\/my\/account",
             "description": "Get account details",
@@ -2086,11 +2086,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "ed0f56f3115325ec31fa8b0268050927",
+            "id": "6b6a20896d5b7a557ae56eb0b05be654",
             "name": "Put My Account",
             "url": "httpsapi.reverb.com\/api\/my\/account",
             "description": "Update account details",
@@ -2117,11 +2117,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "34faeeab67323d178b9ef50033829abc",
+            "id": "14d4c226a4629a505c1c41e3ab0810cb",
             "name": "Get My Addresses",
             "url": "httpsapi.reverb.com\/api\/my\/addresses",
             "description": "See all addresses in your address book",
@@ -2140,11 +2140,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "cc3c8c66b4227e048c026d047ebbc917",
+            "id": "41d0d78129e46dc71dd23aed77397b22",
             "name": "Post My Addresses",
             "url": "httpsapi.reverb.com\/api\/my\/addresses",
             "description": "Create a new address in your address book",
@@ -2163,11 +2163,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "ca0d9c0381bf2d0ca3ffb0fbb69beddb",
+            "id": "ff13ea40673f08651756c6875d07b9eb",
             "name": "Delete My Addresses Address",
             "url": "httpsapi.reverb.com\/api\/my\/addresses\/{address_id}",
             "description": "Delete an existing address in your address book",
@@ -2194,11 +2194,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "7f5c00ce413234156859e8a35f7e63af",
+            "id": "4210757a6a5a0a9051944586babb9dfc",
             "name": "Put My Addresses Address",
             "url": "httpsapi.reverb.com\/api\/my\/addresses\/{address_id}",
             "description": "Update an existing address in your address book",
@@ -2225,11 +2225,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "29c09dcc21de01d27e6a3ff773a1f4dc",
+            "id": "2d240c59466d5d49ac820f6b03377bea",
             "name": "Get My Conversations",
             "url": "httpsapi.reverb.com\/api\/my\/conversations",
             "description": "Get a list of your conversations",
@@ -2284,11 +2284,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "f9e22beae8e728d479886519ae2278e2",
+            "id": "a63887676bd2272e71272524eabfc071",
             "name": "Post My Conversations",
             "url": "httpsapi.reverb.com\/api\/my\/conversations",
             "description": "Post my conversations.",
@@ -2315,11 +2315,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "94fd5cea4ac843d1eabe35358bd99e70",
+            "id": "0187f01f3a76fe7252341d71bfc4db44",
             "name": "Post My Conversations Conversation Messages",
             "url": "httpsapi.reverb.com\/api\/my\/conversations\/{conversation_id}\/messages",
             "description": "Post my conversations conversation messages.",
@@ -2353,11 +2353,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "0a2d067a7e04b284e8371db87752e7d0",
+            "id": "45f299a6b6913d54c5191b1114e1cc5f",
             "name": "Get My Conversations",
             "url": "httpsapi.reverb.com\/api\/my\/conversations\/{id}",
             "description": "Display conversation details with messages in natural time order (oldest to newest)",
@@ -2384,11 +2384,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "ca790323346fc4bdb394c6dd220897e0",
+            "id": "c73bc21e3600e0a18447099ea7d092f8",
             "name": "Put My Conversations",
             "url": "httpsapi.reverb.com\/api\/my\/conversations\/{id}",
             "description": "Mark a conversation read\/unread",
@@ -2422,11 +2422,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "273b34bc721aac88c31c3c24a3103930",
+            "id": "3e338b90e73ce1feb60a56c685c8a269",
             "name": "Get My Counts",
             "url": "httpsapi.reverb.com\/api\/my\/counts",
             "description": "Get your actionable status counts",
@@ -2445,11 +2445,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "95cfc578d765a0a0ef55af59fcafbd12",
+            "id": "31b777e604999b9929d743db94ac1ac6",
             "name": "Delete My Curated Set Product Product",
             "url": "httpsapi.reverb.com\/api\/my\/curated_set\/product\/{product_id}",
             "description": "Delete my curated set product product.",
@@ -2476,11 +2476,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "03c6551305840595b90a367ac1cf8208",
+            "id": "b5eac2fe6b0dce369f0a54fff25149a4",
             "name": "Post My Curated Set Product Product",
             "url": "httpsapi.reverb.com\/api\/my\/curated_set\/product\/{product_id}",
             "description": "Post my curated set product product.",
@@ -2507,11 +2507,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "e5373d377d655f700c2575fac7ec6d68",
+            "id": "51a421e8c00a074329c7d1de455614f8",
             "name": "Get My Feed",
             "url": "httpsapi.reverb.com\/api\/my\/feed",
             "description": "Get listings from your feed",
@@ -2530,11 +2530,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "5caf289c981a8d809a3e591972a35212",
+            "id": "c068e955a32c7ce6f49605b1ce127857",
             "name": "Get My Feed Customize",
             "url": "httpsapi.reverb.com\/api\/my\/feed\/customize",
             "description": "get your feed customization options",
@@ -2553,11 +2553,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "d2f20dfc0e35e881efdfc0f070daf76a",
+            "id": "8d8a8d0a6d4810eab75c5a5276939693",
             "name": "Get My Feed Gr",
             "url": "httpsapi.reverb.com\/api\/my\/feed\/grid",
             "description": "Get my feed gr.",
@@ -2576,11 +2576,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "ce680609513f4c6e2e958c8181cfa033",
+            "id": "122cd0e0b84262f9862580b8da3504a0",
             "name": "Get My Feedback Received",
             "url": "httpsapi.reverb.com\/api\/my\/feedback\/received",
             "description": "List of received feedback",
@@ -2599,11 +2599,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "bb229c2ff3be935f3bdb69e8e27916f4",
+            "id": "2378252ef3d80c8800873941605885cb",
             "name": "Get My Feedback Sent",
             "url": "httpsapi.reverb.com\/api\/my\/feedback\/sent",
             "description": "List of sent feedback",
@@ -2622,11 +2622,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "ecf2cadb2583c296068e5cc5d3a449b6",
+            "id": "e767ed31a8664a3ccda37b7ba3d48679",
             "name": "Get My Follows",
             "url": "httpsapi.reverb.com\/api\/my\/follows",
             "description": "See what the user is following",
@@ -2645,11 +2645,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "3f13f3a8166d4877cfc046e4f3df9cb9",
+            "id": "972a2b32b274e687d6bad39ce982ccf4",
             "name": "Get My Follows Articles",
             "url": "httpsapi.reverb.com\/api\/my\/follows\/articles",
             "description": "Returns a user's ArticleCategoryFollows",
@@ -2668,11 +2668,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "d10a2fab951ed1afee681f2494426ca6",
+            "id": "b9be99e8bc51eedff169792d0a967584",
             "name": "Post My Follows Articles",
             "url": "httpsapi.reverb.com\/api\/my\/follows\/articles",
             "description": "Set a user's ArticleCategoryFollows",
@@ -2699,11 +2699,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "4408e03c7d864fe89c9d5f4c78a04a55",
+            "id": "3c14134cf3642680fcad4eed04afeaed",
             "name": "Delete My Follows Brands Slug",
             "url": "httpsapi.reverb.com\/api\/my\/follows\/brands\/{slug}",
             "description": "Delete my follows brands slug.",
@@ -2730,11 +2730,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "63883180efdba559e8ba7d5ca68006fe",
+            "id": "72841ef304e5cbdccfce467f2a59e881",
             "name": "Get My Follows Brands Slug",
             "url": "httpsapi.reverb.com\/api\/my\/follows\/brands\/{slug}",
             "description": "Get my follows brands slug.",
@@ -2761,11 +2761,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "c481d95dfe0e456a8c9a512ab82113d5",
+            "id": "c77aa9b21986c1971e870a01beb3eab2",
             "name": "Post My Follows Brands Slug",
             "url": "httpsapi.reverb.com\/api\/my\/follows\/brands\/{slug}",
             "description": "Post my follows brands slug.",
@@ -2792,11 +2792,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "479c8a1468833d6caacd7d7cfc448f4c",
+            "id": "ae573251b303760a84b8695580cf1e30",
             "name": "Delete My Follows Categories Category Subcategory",
             "url": "httpsapi.reverb.com\/api\/my\/follows\/categories\/{category}\/{subcategory}",
             "description": "Delete my follows categories category subcategory.",
@@ -2830,11 +2830,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "181a1876183746e2b7572d80500cf8ff",
+            "id": "d3764039eb20f933502696b70b71b0b7",
             "name": "Get My Follows Categories Category Subcategory",
             "url": "httpsapi.reverb.com\/api\/my\/follows\/categories\/{category}\/{subcategory}",
             "description": "Get my follows categories category subcategory.",
@@ -2868,11 +2868,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "7077d2ddc32299eda2af895a87d7dd54",
+            "id": "bc725ace1be692ad0823ff869e1caa5a",
             "name": "Post My Follows Categories Category Subcategory",
             "url": "httpsapi.reverb.com\/api\/my\/follows\/categories\/{category}\/{subcategory}",
             "description": "Post my follows categories category subcategory.",
@@ -2906,11 +2906,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "8eba170199bf28c3c87b372d51a20f75",
+            "id": "a667fc0e4e4112558cee7ddc195c5b35",
             "name": "Delete My Follows Categories Entifier",
             "url": "httpsapi.reverb.com\/api\/my\/follows\/categories\/{identifier}",
             "description": "Delete my follows categories entifier.",
@@ -2937,11 +2937,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "7daf006bd88a400c88cd997c9e113d84",
+            "id": "ad1e6f07abe9fd4654efab5cad4985f6",
             "name": "Get My Follows Categories Entifier",
             "url": "httpsapi.reverb.com\/api\/my\/follows\/categories\/{identifier}",
             "description": "Get my follows categories entifier.",
@@ -2968,11 +2968,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "d9e9b7c404e1de5bc6e12658b6b80c6b",
+            "id": "41612f4ee5fc9b5261944783127c5b52",
             "name": "Post My Follows Categories Entifier",
             "url": "httpsapi.reverb.com\/api\/my\/follows\/categories\/{identifier}",
             "description": "Post my follows categories entifier.",
@@ -2999,11 +2999,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "e2dfc6d727c8c42450b6b71c043f354d",
+            "id": "b66e61017899c46a0b0d40c5295d066d",
             "name": "Delete My Follows Collections Slug",
             "url": "httpsapi.reverb.com\/api\/my\/follows\/collections\/{slug}",
             "description": "Delete my follows collections slug.",
@@ -3030,11 +3030,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "8543c11a64d75f1bbb0ca9e6430f5afd",
+            "id": "6d6f3d9f9a9f4050c7e261415935cbf1",
             "name": "Get My Follows Collections Slug",
             "url": "httpsapi.reverb.com\/api\/my\/follows\/collections\/{slug}",
             "description": "Get my follows collections slug.",
@@ -3061,11 +3061,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "5a2deeb350d8bcef95a810156568c778",
+            "id": "3fdb37e82bf5f36ebf5e61ca4da0b70a",
             "name": "Post My Follows Collections Slug",
             "url": "httpsapi.reverb.com\/api\/my\/follows\/collections\/{slug}",
             "description": "Post my follows collections slug.",
@@ -3092,11 +3092,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "7e238ff427b70785d8b77db58c8d8b69",
+            "id": "1fcc50d2729fadcdc3e8cc882344949a",
             "name": "Delete My Follows Handpicked Slug",
             "url": "httpsapi.reverb.com\/api\/my\/follows\/handpicked\/{slug}",
             "description": "Delete my follows handpicked slug.",
@@ -3123,11 +3123,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "5e7b224f8b9582bac4c90c4fb0973f1f",
+            "id": "56567d866787487000a0b3660d870fc8",
             "name": "Get My Follows Handpicked Slug",
             "url": "httpsapi.reverb.com\/api\/my\/follows\/handpicked\/{slug}",
             "description": "Follow status for a handpicked collection",
@@ -3154,11 +3154,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "8b68c16ef4d2faf393a302b9b86e2b32",
+            "id": "9ed9de668dfc767d82782051dd4164ea",
             "name": "Post My Follows Handpicked Slug",
             "url": "httpsapi.reverb.com\/api\/my\/follows\/handpicked\/{slug}",
             "description": "Post my follows handpicked slug.",
@@ -3185,11 +3185,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "04c5b669b36f91e5397f3f5ed81e578a",
+            "id": "7bc914c9eb2a1c6b73ce651b6e3d403b",
             "name": "Get My Follows Search",
             "url": "httpsapi.reverb.com\/api\/my\/follows\/search",
             "description": "Follow status for a search",
@@ -3208,11 +3208,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "dec8b879c4855bf47b270cf5dfbec63a",
+            "id": "aeee8caf250226a98838d2e3501f027e",
             "name": "Post My Follows Search",
             "url": "httpsapi.reverb.com\/api\/my\/follows\/search",
             "description": "Post my follows search.",
@@ -3239,11 +3239,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "54e4c32600219416d921e5bcc0dd06c4",
+            "id": "ff8d1a63dd7ddf504b6c2bc05c9f3458",
             "name": "Delete My Follows Shops Slug",
             "url": "httpsapi.reverb.com\/api\/my\/follows\/shops\/{slug}",
             "description": "Delete my follows shops slug.",
@@ -3270,11 +3270,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "a73573015ad4445e18bad0104448142b",
+            "id": "abf7592fa6aeb0c7a41a5ee7caab63c2",
             "name": "Get My Follows Shops Slug",
             "url": "httpsapi.reverb.com\/api\/my\/follows\/shops\/{slug}",
             "description": "Get my follows shops slug.",
@@ -3301,11 +3301,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "6730cb900c55aae399ab4f67fe0eb969",
+            "id": "4f1ca5ab43e8471c8e11400b6a833041",
             "name": "Post My Follows Shops Slug",
             "url": "httpsapi.reverb.com\/api\/my\/follows\/shops\/{slug}",
             "description": "Post my follows shops slug.",
@@ -3332,11 +3332,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "da1bc2d0585cefa75b0f28ab5fbd8d9e",
+            "id": "65949ec9147ba86f8bfe1f544fc74282",
             "name": "Delete My Follows Follow",
             "url": "httpsapi.reverb.com\/api\/my\/follows\/{follow_id}",
             "description": "Delete my follows follow.",
@@ -3363,11 +3363,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "b2d258d0a1d7d7118a02ece9016da0a1",
+            "id": "eb95cf99a9cb1e6cd24e5fd4c3118c89",
             "name": "Delete My Follows Follow Alert",
             "url": "httpsapi.reverb.com\/api\/my\/follows\/{follow_id}\/alert",
             "description": "Delete my follows follow alert.",
@@ -3394,11 +3394,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "d4f9b7a2671fc1edb66a11e38e0c3cc2",
+            "id": "23b4a3301d92e9ae09103eb33769a0e7",
             "name": "Post My Follows Follow Alert",
             "url": "httpsapi.reverb.com\/api\/my\/follows\/{follow_id}\/alert",
             "description": "Post my follows follow alert.",
@@ -3425,11 +3425,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "8e43c55bda7b0e492f546a7158b59909",
+            "id": "302dd77c5d4ac47284ae96086b4441db",
             "name": "Get My Listings",
             "url": "httpsapi.reverb.com\/api\/my\/listings",
             "description": "Retrieve a list of live listings for the seller. To search all listings specify state=all",
@@ -3673,11 +3673,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "5ed25a4ecd24fe76de1062871024442f",
+            "id": "3a4b83a849ee4435fe324aabeda6f1e4",
             "name": "Get My Listings Drafts",
             "url": "httpsapi.reverb.com\/api\/my\/listings\/drafts",
             "description": "Retrieve a list your draft listings",
@@ -3907,11 +3907,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "dc8bbc4b2cbdcb448bcc013970dfa43d",
+            "id": "a9858a3ab97d47562579d9bad1f47b86",
             "name": "Get My Listings Negotiations",
             "url": "httpsapi.reverb.com\/api\/my\/listings\/negotiations",
             "description": "Get a list of active negotiations as a seller",
@@ -3952,11 +3952,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "68bfa7b277a500755f205fc4cd61f16a",
+            "id": "a9f6bf0c9a35edf5bd269545c90a2d37",
             "name": "Put My Listings Slug State End",
             "url": "httpsapi.reverb.com\/api\/my\/listings\/{slug}\/state\/end",
             "description": "Put my listings slug state end.",
@@ -3990,11 +3990,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "82ce5e44f570b7aacb51443b04ef7862",
+            "id": "e7f162db5381d6bf3936daebc15b2b3a",
             "name": "Get My Lists",
             "url": "httpsapi.reverb.com\/api\/my\/lists",
             "description": "Get a list of your lists (wishlist, watch list, etc)",
@@ -4013,11 +4013,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "2dd3a1719dd33fcd24c00f16f0a6c72d",
+            "id": "72e715bd217710c9a94b4c13a5a58735",
             "name": "Get My Negotiations Buying",
             "url": "httpsapi.reverb.com\/api\/my\/negotiations\/buying",
             "description": "Get a list of active negotiations as a buyer",
@@ -4058,11 +4058,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "c7c531383616f9a44b215bb5ab3322c4",
+            "id": "2fcfd1083b52306ad1dc88dcb8f6b6c6",
             "name": "Get My Negotiations",
             "url": "httpsapi.reverb.com\/api\/my\/negotiations\/{id}",
             "description": "Get my negotiations.",
@@ -4089,11 +4089,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "a372f33f2fea29f4449ad028fea3bbfc",
+            "id": "bc69dfa440b5ed302369f74a512dec15",
             "name": "Post My Negotiations Accept",
             "url": "httpsapi.reverb.com\/api\/my\/negotiations\/{id}\/accept",
             "description": "Post my negotiations accept.",
@@ -4127,11 +4127,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "c456c32310d7f294cc42e7bf6b8adc1e",
+            "id": "a6e6c1a32bd3de767a3785ab7f1b0e9b",
             "name": "Post My Negotiations Counter",
             "url": "httpsapi.reverb.com\/api\/my\/negotiations\/{id}\/counter",
             "description": "Post my negotiations counter.",
@@ -4165,11 +4165,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "3444bb0d442cc5e4681e3862365a90e4",
+            "id": "78a7bc43df8613eda4821d64ed08c42c",
             "name": "Post My Negotiations Decline",
             "url": "httpsapi.reverb.com\/api\/my\/negotiations\/{id}\/decline",
             "description": "Post my negotiations decline.",
@@ -4196,11 +4196,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "cce47a7efcedf71094b31aad6de8d33b",
+            "id": "81a1651ce61c025d0ae8a44c78f4a6ab",
             "name": "Get My Orders Awaiting Feedback",
             "url": "httpsapi.reverb.com\/api\/my\/orders\/awaiting_feedback",
             "description": "List of orders that need feedback",
@@ -4219,11 +4219,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "51d53e1462bc23fc08854bc6d35c4bef",
+            "id": "bf18a3767725f582cf97e448fe1d64ac",
             "name": "Get My Orders Buying All",
             "url": "httpsapi.reverb.com\/api\/my\/orders\/buying\/all",
             "description": "Returns all orders, newest first.",
@@ -4242,11 +4242,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "9edacc98634ed8d60278f29140ac0c1d",
+            "id": "0c82c2b290b1cec37c23e7e381eca783",
             "name": "Get My Orders Buying Unpa",
             "url": "httpsapi.reverb.com\/api\/my\/orders\/buying\/unpaid",
             "description": "Returns unpaid orders, newest first.",
@@ -4265,11 +4265,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "ffa5317182c5f2515f86713025cf353f",
+            "id": "adbc1867abf4054e16dddb21e1922864",
             "name": "Get My Orders Buying",
             "url": "httpsapi.reverb.com\/api\/my\/orders\/buying\/{id}",
             "description": "Returns order details for a buyer",
@@ -4296,11 +4296,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "11deec549e5bfb11b4536cd0da56556a",
+            "id": "7a33bea059b0645239bd6fe5d462c598",
             "name": "Post My Orders Buying Mark Received",
             "url": "httpsapi.reverb.com\/api\/my\/orders\/buying\/{id}\/mark_received",
             "description": "Marks an order as received by the buyer",
@@ -4327,11 +4327,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "9c70992118e46881fe4ce7aeed42b357",
+            "id": "14b773fb6508c8fce4c55a997b8b248c",
             "name": "Get My Orders Selling All",
             "url": "httpsapi.reverb.com\/api\/my\/orders\/selling\/all",
             "description": "Get all seller orders, newest first.",
@@ -4400,11 +4400,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "436ef905188c378a07f397fb5c3e3cce",
+            "id": "3c359d8b57768b3d4171ef8c995b3699",
             "name": "Get My Orders Selling Awaiting Shipment",
             "url": "httpsapi.reverb.com\/api\/my\/orders\/selling\/awaiting_shipment",
             "description": "Get seller orders awaiting shipment, newest first.",
@@ -4473,11 +4473,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "ae2ff46782f9197ff6cbff1b0311c89f",
+            "id": "6f038e110c7a4ad158507d6354510b8b",
             "name": "Get My Orders Selling Buyer History Buyer",
             "url": "httpsapi.reverb.com\/api\/my\/orders\/selling\/buyer_history\/{buyer_id}",
             "description": "Get my orders selling buyer history buyer.",
@@ -4504,11 +4504,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "08c211e49f1eb96bdd17610b37810c48",
+            "id": "42318e3afc74b5b207039cd0de1f846b",
             "name": "Get My Orders Selling Unpa",
             "url": "httpsapi.reverb.com\/api\/my\/orders\/selling\/unpaid",
             "description": "Get unpaid seller orders, newest first.",
@@ -4577,11 +4577,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "44b440259516790714ef849c40167c2d",
+            "id": "2240866d2b1afce3607ff9d4d686ba11",
             "name": "Get My Orders Selling",
             "url": "httpsapi.reverb.com\/api\/my\/orders\/selling\/{id}",
             "description": "Returns order details for a seller",
@@ -4608,11 +4608,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "b1150ceb86d6d01180fc4c9110fe281b",
+            "id": "5b3ae9ddc2fa4b922d636f2c5603df2e",
             "name": "Post My Orders Selling Mark Picked Up",
             "url": "httpsapi.reverb.com\/api\/my\/orders\/selling\/{id}\/mark_picked_up",
             "description": "Post my orders selling mark picked up.",
@@ -4646,11 +4646,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "28f74eb3f7820711ecd393558ccf13be",
+            "id": "6bbca44d0e0325b45dc3fc5da8ff49d1",
             "name": "Post My Orders Selling Ship",
             "url": "httpsapi.reverb.com\/api\/my\/orders\/selling\/{id}\/ship",
             "description": "Post my orders selling ship.",
@@ -4684,11 +4684,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "59f1a71efcd49ce531375cebd5eb8b40",
+            "id": "52037813a323db85b65cae4e250d582f",
             "name": "Post My Orders Selling Order Refund Requests",
             "url": "httpsapi.reverb.com\/api\/my\/orders\/selling\/{order_id}\/refund_requests",
             "description": "Post my orders selling order refund requests.",
@@ -4715,11 +4715,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "a181273bbdc6c2fb2bdee2b7c8793117",
+            "id": "9ca24be860dcb818f1ccc44d93c108f6",
             "name": "Get My Payments Selling",
             "url": "httpsapi.reverb.com\/api\/my\/payments\/selling",
             "description": "Get my payments selling.",
@@ -4795,11 +4795,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "9c92935581856f9d6e3c1084c5854c5a",
+            "id": "c50c80e396684030c8726a42d2750de4",
             "name": "Get My Payments Selling",
             "url": "httpsapi.reverb.com\/api\/my\/payments\/selling\/{id}",
             "description": "Get my payments selling.",
@@ -4826,11 +4826,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "758368fc4d13523eddeb0746d93a2865",
+            "id": "854513fe41df6b7d73a0bc4654859fa5",
             "name": "Get My Payouts",
             "url": "httpsapi.reverb.com\/api\/my\/payouts",
             "description": "Get a list of payouts",
@@ -4849,11 +4849,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "4a449fd4e6c58c9ea2adbd0a3f02a5db",
+            "id": "763121e00bb499343632e81b88c4456b",
             "name": "Get My Payouts Line Items",
             "url": "httpsapi.reverb.com\/api\/my\/payouts\/{id}\/line_items",
             "description": "Read the line items of a payout",
@@ -4880,11 +4880,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "7055ca0575fa4f3fae4a0795525fc0b6",
+            "id": "04f3a3aab1e3efabc8460b42c7cb8695",
             "name": "Get My Refund Requests Selling",
             "url": "httpsapi.reverb.com\/api\/my\/refund_requests\/selling",
             "description": "Get a list of refund requests as a seller",
@@ -4903,11 +4903,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "e8691eecd8b1906c978ee4088bafd940",
+            "id": "8d5d16a016aee5c7db6027b96f4f0bf4",
             "name": "Put My Refund Requests Selling",
             "url": "httpsapi.reverb.com\/api\/my\/refund_requests\/selling\/{id}",
             "description": "Update a refund request for a sold order",
@@ -4934,11 +4934,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "2a67fedd870aec7f4774477ecbed09b9",
+            "id": "35e3b939be217c317828e3f1731d557a",
             "name": "Get My Viewed Listings",
             "url": "httpsapi.reverb.com\/api\/my\/viewed_listings",
             "description": "Get a list of your recently viewed listings.",
@@ -4957,11 +4957,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "d33b8d2906d3e4f3a866047c79a8b7dd",
+            "id": "6f43e3692683c4bf8e3b7fde4b2e2b6d",
             "name": "Get My Wishlist",
             "url": "httpsapi.reverb.com\/api\/my\/wishlist",
             "description": "Get a list of wishlisted items",
@@ -4980,11 +4980,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "331f93ce4d63db58d8fbe7c095e1b683",
+            "id": "9f0a22781d8d01bef1588322fd00b5a6",
             "name": "Delete My Wishlist",
             "url": "httpsapi.reverb.com\/api\/my\/wishlist\/{id}",
             "description": "Remove a listing from your wishlist",
@@ -5011,11 +5011,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "9a8066f43d9425dbb9f988b98b2af1da",
+            "id": "ed9d63edc794a1b8e3a84531449aa93c",
             "name": "Put My Wishlist",
             "url": "httpsapi.reverb.com\/api\/my\/wishlist\/{id}",
             "description": "Add a listing to your wishlist",
@@ -5042,11 +5042,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "7177d20a3f107a76846f624595784674",
+            "id": "1eb1f9ef2deb5438e4a925464430569b",
             "name": "Get Orders Order Feedback Buyer",
             "url": "httpsapi.reverb.com\/api\/orders\/{order_id}\/feedback\/buyer",
             "description": "Feedback details for an order's buyer",
@@ -5073,11 +5073,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "ffd0f1f78d40eb8ef9d8aa0ca423f92c",
+            "id": "0a0717699a761e5ffbdb361c5e48023f",
             "name": "Post Orders Order Feedback Buyer",
             "url": "httpsapi.reverb.com\/api\/orders\/{order_id}\/feedback\/buyer",
             "description": "Add feedback about an order's buyer",
@@ -5104,11 +5104,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "770c9a4859492a5a47d112877c9da931",
+            "id": "beeb8c1402da38bcaf700519b93034f7",
             "name": "Get Orders Order Feedback Seller",
             "url": "httpsapi.reverb.com\/api\/orders\/{order_id}\/feedback\/seller",
             "description": "Feedback details for an order's seller",
@@ -5135,11 +5135,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "e08c746cb4968107655fe254646c3ede",
+            "id": "dea6b000214cc7c2865a0dfcb8feac00",
             "name": "Post Orders Order Feedback Seller",
             "url": "httpsapi.reverb.com\/api\/orders\/{order_id}\/feedback\/seller",
             "description": "Add feedback about an order's seller",
@@ -5166,11 +5166,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "6637d6ad08f569509537fa2472dd9278",
+            "id": "d74069db0b18f74ca9841d3d728f4885",
             "name": "Get Payment Methods",
             "url": "httpsapi.reverb.com\/api\/payment_methods",
             "description": "Get list of payment methods",
@@ -5189,11 +5189,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "306188398938dc716107f5676e9755cc",
+            "id": "f9f8c5e526f49d39898241d2b45a6b19",
             "name": "Get Pricegue",
             "url": "httpsapi.reverb.com\/api\/priceguide",
             "description": "Search the Price Guide",
@@ -5220,11 +5220,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "e50d514b8b032c6960d405de33573e4b",
+            "id": "733111b9773a18211a1aaca9ee8f6aaa",
             "name": "Get Pricegue",
             "url": "httpsapi.reverb.com\/api\/priceguide\/{id}",
             "description": "Retrieve a Price Guide",
@@ -5251,11 +5251,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "1c0cf5f8b9da755cc6acd0d82086f223",
+            "id": "6fbe2c5f1ec3a23f088e1c21df8bc1eb",
             "name": "Get Pricegue Transactions",
             "url": "httpsapi.reverb.com\/api\/priceguide\/{id}\/transactions",
             "description": "Get a list of paginated transactions for a price guide.",
@@ -5289,11 +5289,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "d760af64f95775dd7da5c4b79c9cb5e7",
+            "id": "9b1c6661792afdf89a0997b088f4766f",
             "name": "Get Pricegue Transactions Summary",
             "url": "httpsapi.reverb.com\/api\/priceguide\/{id}\/transactions\/summary",
             "description": "Get a summary of transactions for a given price guide",
@@ -5334,11 +5334,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "6604b5daedc1cc83841406ed3357700e",
+            "id": "6d15c596b889fce6d7aff9bd919a5dd1",
             "name": "Get Products Reviews",
             "url": "httpsapi.reverb.com\/api\/products\/reviews\/{id}",
             "description": "Get products reviews.",
@@ -5365,11 +5365,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "c51a6fa3b7f403942bd510d754a9f7d3",
+            "id": "28e4ff2d2ce0677caf3651cd27575144",
             "name": "Put Products Reviews",
             "url": "httpsapi.reverb.com\/api\/products\/reviews\/{id}",
             "description": "Put products reviews.",
@@ -5403,11 +5403,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "05091019b96bc3bc5ed13c671ecff468",
+            "id": "cae7be2c61f0a401ee951c887dcf2f72",
             "name": "Get Products Slug Reviews",
             "url": "httpsapi.reverb.com\/api\/products\/{slug}\/reviews",
             "description": "View reviews of a comparison shopping page",
@@ -5434,11 +5434,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "bb47ec1e9360e1767f59319e71774a03",
+            "id": "31de89e617f14d21f864f0b63c497238",
             "name": "Post Products Slug Reviews",
             "url": "httpsapi.reverb.com\/api\/products\/{slug}\/reviews",
             "description": "Create a review for a product",
@@ -5465,11 +5465,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "7301bd48dabba267a2b1780cbea1f1e7",
+            "id": "6949f64328d09ff4eab678035e8eb029",
             "name": "Get Sales Reverb",
             "url": "httpsapi.reverb.com\/api\/sales\/reverb",
             "description": "View upcoming and live Reverb official sales.",
@@ -5488,11 +5488,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "981e434f177ae9a4256cb48df0ea20c0",
+            "id": "69f420952b6abb05d118111436d9c621",
             "name": "Get Sales Seller",
             "url": "httpsapi.reverb.com\/api\/sales\/seller",
             "description": "View your created sales.",
@@ -5511,11 +5511,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "8eec111c317cc39f50a1323311ce32eb",
+            "id": "fb5b6ab1955e543f64b1830665285f6a",
             "name": "Delete Sales Sale Listings",
             "url": "httpsapi.reverb.com\/api\/sales\/{sale_id}\/listings",
             "description": "Remove a listing from a sale",
@@ -5542,11 +5542,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "1a328429cf9528f3dc211652008897d6",
+            "id": "2b2744060f25946ea468b1bf3a47a766",
             "name": "Post Sales Sale Listings",
             "url": "httpsapi.reverb.com\/api\/sales\/{sale_id}\/listings",
             "description": "Post sales sale listings.",
@@ -5573,11 +5573,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "eadfc600b7e2de856c067b55e20a4f64",
+            "id": "14c6fc2c5c161c2e9af88422743c1aff",
             "name": "Get Sales Slug",
             "url": "httpsapi.reverb.com\/api\/sales\/{slug}",
             "description": "Get sales slug.",
@@ -5604,11 +5604,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "0555ae6d29b3cdff1b45f920985bcea1",
+            "id": "530f394889196bfcd944fe06d7f10d13",
             "name": "Get Shipping Provers",
             "url": "httpsapi.reverb.com\/api\/shipping\/providers",
             "description": "List of supported shipping providers",
@@ -5627,11 +5627,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "f2026c92c73e9c4a7465b68f783d98b0",
+            "id": "5ea2aabe0f8eee6199a9e269a30fe9e9",
             "name": "Get Shipping Regions",
             "url": "httpsapi.reverb.com\/api\/shipping\/regions",
             "description": "Get shipping regions.",
@@ -5650,11 +5650,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "b48cbf98e911be113e65809177423b47",
+            "id": "7ad75d9fb34e12a5a61d1079aad6a3b9",
             "name": "Get Shop",
             "url": "httpsapi.reverb.com\/api\/shop",
             "description": "Get your own shop details",
@@ -5673,11 +5673,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "e58549f662444b7d03410d437a82a5bf",
+            "id": "e3e165dba73a996142207de039066df1",
             "name": "Put Shop",
             "url": "httpsapi.reverb.com\/api\/shop",
             "description": "Update your shop profile",
@@ -5704,11 +5704,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "5a79dba97d2664fe51e897a06a9bc6e3",
+            "id": "f49a6e6fab2b13b70959f73e606c992d",
             "name": "Get Shop Listing Conditions",
             "url": "httpsapi.reverb.com\/api\/shop\/listing_conditions",
             "description": "List of supported product conditions",
@@ -5727,11 +5727,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "2850d13f96101a6fd004d9f12896bd34",
+            "id": "bc83a4ec926162d8315c7efb70283d64",
             "name": "Get Shop Payment Methods",
             "url": "httpsapi.reverb.com\/api\/shop\/payment_methods",
             "description": "Get accepted payment methods",
@@ -5750,11 +5750,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "8067a46cc34a44d84905c858151bcb84",
+            "id": "606f9eb9682d1e9644df1830a0fc617e",
             "name": "Delete Shop Vacation",
             "url": "httpsapi.reverb.com\/api\/shop\/vacation",
             "description": "Disable vacation mode. All listings will be re-enabled.",
@@ -5773,11 +5773,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "b8ea7baa36040eb3189862fc311b3f04",
+            "id": "27e05a4b56e15f2ec1ac7fbbaba88979",
             "name": "Get Shop Vacation",
             "url": "httpsapi.reverb.com\/api\/shop\/vacation",
             "description": "Returns shop vacation status",
@@ -5796,11 +5796,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "256902945651506bb0358acf9c9e209d",
+            "id": "0a5e14e1e88bc8e028aa4a63f39aee1d",
             "name": "Post Shop Vacation",
             "url": "httpsapi.reverb.com\/api\/shop\/vacation",
             "description": "Enable vacation mode. All listings will be unavailable until vacation mode is turned off.",
@@ -5819,11 +5819,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "3ade7323ef7382d44ad45d95abdf84e3",
+            "id": "1ba2cd4aa6f9f80093bc3ffd8b02a185",
             "name": "Get Shops Storefronts",
             "url": "httpsapi.reverb.com\/api\/shops\/{id}\/storefronts",
             "description": "Get storefront details on a shop.",
@@ -5850,11 +5850,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "de9e71fb521634a32d3827f25b92325c",
+            "id": "7be1f45092bc7c22bc808ecbc519c816",
             "name": "Get Shops Shop Shipping Profiles",
             "url": "httpsapi.reverb.com\/api\/shops\/{shop_id}\/shipping_profiles",
             "description": "List of shipping profiles for your shop",
@@ -5881,11 +5881,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "cb7248568884052319d1331733ed6d02",
+            "id": "98897d4c31fc91ec47bfcc1dc7f32ea5",
             "name": "Get Shops Slug",
             "url": "httpsapi.reverb.com\/api\/shops\/{slug}",
             "description": "Get details on a shop.",
@@ -5919,11 +5919,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "3307948b33f3d90bf2aa43df5826e7d8",
+            "id": "d07c7f6d658912208afbe27f4fd26a73",
             "name": "Get Shops Slug Feedback",
             "url": "httpsapi.reverb.com\/api\/shops\/{slug}\/feedback",
             "description": "Get shops slug feedback.",
@@ -5950,11 +5950,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "424c559a71c9ddb0962a6b3c2342fa58",
+            "id": "f1237290b9a6031610c20afd13a94dab",
             "name": "Get Shops Slug Feedback Buyer",
             "url": "httpsapi.reverb.com\/api\/shops\/{slug}\/feedback\/buyer",
             "description": "Get seller's feedback as a buyer",
@@ -5981,11 +5981,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "6ef95f5b8c321db3c3cc3f091bfd7054",
+            "id": "09dae2249374b5edf61265f43099e085",
             "name": "Get Shops Slug Feedback Seller",
             "url": "httpsapi.reverb.com\/api\/shops\/{slug}\/feedback\/seller",
             "description": "Get seller's feedback as a seller",
@@ -6012,11 +6012,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "a7c8a2f7217532db399e7dc7330a1e58",
+            "id": "ca716753748c96ef14ecceef36ae018a",
             "name": "Get Wants",
             "url": "httpsapi.reverb.com\/api\/wants",
             "description": "A list of wanted items by the user",
@@ -6035,11 +6035,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "1262ce37855da6508da89f817936f3e3",
+            "id": "bac7ecd0e0a2d1234a0b4f7688c56c3c",
             "name": "Delete Wants",
             "url": "httpsapi.reverb.com\/api\/wants\/{id}",
             "description": "Unmark an item wanted.",
@@ -6066,11 +6066,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "526885df5779ce98ada0f8d48d46b603",
+            "id": "b04091de2f0704f5cedeaa895897b7de",
             "name": "Put Wants",
             "url": "httpsapi.reverb.com\/api\/wants\/{id}",
             "description": "Mark an item wanted. Returns 200 on success or 422 on failure.",
@@ -6097,11 +6097,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "329c03f9865d95b2454e06c7c9478927",
+            "id": "a300f764e530d1f05551851348f850ce",
             "name": "Get Webhooks Registrations",
             "url": "httpsapi.reverb.com\/api\/webhooks\/registrations",
             "description": "Get webhooks registrations.",
@@ -6120,11 +6120,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "1e331decb9227c79893ca5895d1fa920",
+            "id": "4a355e5de1bd98bddfdf39025caf47ba",
             "name": "Post Webhooks Registrations",
             "url": "httpsapi.reverb.com\/api\/webhooks\/registrations",
             "description": "Post webhooks registrations.",
@@ -6151,11 +6151,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "245eaaa053d629a45b8d2202cd1a38ec",
+            "id": "1b8f8e585d6e762e738d6ef9b437a83f",
             "name": "Delete Webhooks Registrations",
             "url": "httpsapi.reverb.com\/api\/webhooks\/registrations\/{id}",
             "description": "Delete webhooks registrations.",
@@ -6182,11 +6182,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "73be55369b583937784827a822d9c912",
+            "id": "edcb567bb64c035a11645c3e79b031a2",
             "name": "Get Webhooks Registrations",
             "url": "httpsapi.reverb.com\/api\/webhooks\/registrations\/{id}",
             "description": "Get details of a webhook registration",
@@ -6213,11 +6213,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "9f3c627e525ff96a4fd337512564696a",
+            "id": "c6f675a5cfe424761f969736280f1898",
             "name": "Post Accounts",
             "url": "httpsapi.reverb.com\/api\/accounts",
             "description": "Create an account.",
@@ -6244,11 +6244,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "05826e85fde5a1547e6ae7192db25b85",
+            "id": "0b4ea18722fa5add8f3efb2ac9c6cb09",
             "name": "Get Articles Featured",
             "url": "httpsapi.reverb.com\/api\/articles\/featured",
             "description": "See featured Reverb blog posts",
@@ -6267,11 +6267,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "a903bb53cb1a61fe12ce2ed6b04890e3",
+            "id": "c34f71b1ee1349b25cd2a29dd67cd334",
             "name": "Get Articles Recently Featured",
             "url": "httpsapi.reverb.com\/api\/articles\/recently_featured",
             "description": "Get articles recently featured.",
@@ -6290,11 +6290,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "ce4f29bd083569603624376c8957b15a",
+            "id": "dd677ee00ec114e42e33c7e3a5617911",
             "name": "Get Articles Slug",
             "url": "httpsapi.reverb.com\/api\/articles\/{slug}",
             "description": "Display a single article",
@@ -6321,11 +6321,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "1d79162e72e60c48aaec80a31e95c7cb",
+            "id": "9e786f5ba114777e013aae72ca5d829b",
             "name": "Get Articles Slug Related Listings",
             "url": "httpsapi.reverb.com\/api\/articles\/{slug}\/related-listings",
             "description": "Find listings related to an article",
@@ -6352,11 +6352,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "5c4c5e4b6482aae5cfddf3321b780db8",
+            "id": "1fda6b9e66f98f75ebe252e30cbca693",
             "name": "Post Auth Forgot Password",
             "url": "httpsapi.reverb.com\/api\/auth\/forgot_password",
             "description": "Send a password reset email",
@@ -6383,11 +6383,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "7f624fda9dbcee9b3c317dbc14d661a6",
+            "id": "95aa74497ed7e3163b563361b3353d2f",
             "name": "Put Auth Logout",
             "url": "httpsapi.reverb.com\/api\/auth\/logout",
             "description": "Logout (primarily for mobile clients)",
@@ -6414,11 +6414,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "742dee518926293b794cbd22ee260225",
+            "id": "1fe19d7c051cd5cf4ed5200d0b59ce98",
             "name": "Get Autosuggest",
             "url": "httpsapi.reverb.com\/api\/autosuggest",
             "description": "Autosuggest terms for searches",
@@ -6437,11 +6437,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "03243e1f1bf078ab5fa3c31cd78f53fb",
+            "id": "71d8f3fb4d03c63dd8f96202ec90067b",
             "name": "Get Cart",
             "url": "httpsapi.reverb.com\/api\/cart",
             "description": "Get all cart items",
@@ -6460,11 +6460,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "a30d27b12d47e96763b3aae25a8da0db",
+            "id": "5cd01ca96f254f10ab07cf7cf4ec19ee",
             "name": "Post Cart Move To Watch List Cart Item",
             "url": "httpsapi.reverb.com\/api\/cart\/move_to_watch_list\/{cart_item_id}",
             "description": "Remove a cart item and add it to watch list",
@@ -6491,11 +6491,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "7059ac831df67aa7f0d0b85c4f64b353",
+            "id": "c2016b25855b35fccb42ce7372e90781",
             "name": "Delete Cart",
             "url": "httpsapi.reverb.com\/api\/cart\/{id}",
             "description": "Remove a product from the cart",
@@ -6522,11 +6522,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "b2bd6aacd4d00ccaaf91da268cb4ae9c",
+            "id": "f2938b5db973596a76900c2e2fd89066",
             "name": "Post Cart",
             "url": "httpsapi.reverb.com\/api\/cart\/{id}",
             "description": "Add product to the cart",
@@ -6553,11 +6553,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "59d36c0a1d1bda354518599b83b49a5c",
+            "id": "78e7b414978ac442eb3cee08f78adcde",
             "name": "Put Cart",
             "url": "httpsapi.reverb.com\/api\/cart\/{id}",
             "description": "Update cart item details",
@@ -6584,11 +6584,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "6d6f4ec824b764fae6d4c5652fe0785b",
+            "id": "207be50d7ac5f8f9f7fddde5480dc28f",
             "name": "Get Collections",
             "url": "httpsapi.reverb.com\/api\/collections",
             "description": "List of curated collections",
@@ -6607,11 +6607,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "11eb07592c9cd8da51d450f24a9144ac",
+            "id": "90e7bfc7265842cf25326a93ac90d304",
             "name": "Get Collections Slug",
             "url": "httpsapi.reverb.com\/api\/collections\/{slug}",
             "description": "Get collections slug.",
@@ -6638,11 +6638,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "82270771b877214aa9ae112ce8ee29ba",
+            "id": "ab7f405531bdf1d1d8766ed633089a53",
             "name": "Get My Orders Buying Buying History Seller",
             "url": "httpsapi.reverb.com\/api\/my\/orders\/buying\/buying_history\/{seller_id}",
             "description": "Get my orders buying buying history seller.",
@@ -6669,11 +6669,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "432aa3e64a58746e123bea53ff989ee1",
+            "id": "3846790a9c49929592e87cadc3b69488",
             "name": "Get Shop Stats",
             "url": "httpsapi.reverb.com\/api\/shop\/stats",
             "description": "Get listings stats",
@@ -6692,11 +6692,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "41bef79170ad4360722db14dce2a292e",
+            "id": "a6b564e3328a3df671c653ab61e4307c",
             "name": "Get Shop Stats Activity",
             "url": "httpsapi.reverb.com\/api\/shop\/stats\/activity",
             "description": "Get shop activity for a particular time period",
@@ -6730,11 +6730,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "10343572d946a5c549dea2d2f7a4bffa",
+            "id": "672e384c3ac8c2e3bf02b2672f19324c",
             "name": "Get Vinyl Listings",
             "url": "httpsapi.reverb.com\/api\/vinyl\/listings",
             "description": "Get vinyl listings.",
@@ -6761,11 +6761,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "0cfb49e9ca6ea124c0b659ff8eedbb4a",
+            "id": "06c105a40bca9b473be326d1bf489ee1",
             "name": "Post Vinyl Listings",
             "url": "httpsapi.reverb.com\/api\/vinyl\/listings",
             "description": "Post vinyl listings.",
@@ -6784,11 +6784,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         },
         {
-            "id": "f5c25a17b1266f0f848a5a9a7fd30ea7",
+            "id": "828f1deff817939ae5e811e5531a8d3f",
             "name": "Get Vinyl Listings",
             "url": "httpsapi.reverb.com\/api\/vinyl\/listings\/{id}",
             "description": "Get vinyl listings.",
@@ -6815,7 +6815,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "8d94973bf6d4b5aa19f32a6bb4fc86a7",
+            "collectionId": "2993c1de03a17e93095b50d8a9f3622a",
             "rawModeData": ""
         }
     ]
