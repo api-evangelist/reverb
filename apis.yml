@@ -2,28 +2,49 @@ aid: reverb
 url: https://raw.githubusercontent.com/api-evangelist/reverb/refs/heads/main/apis.yml
 name: Reverb
 x-type: company
-description: >-
-  Reverb (an Etsy company) is the largest marketplace for musical instruments, gear, and audio equipment. APIs cover listings, orders, inventory, and pricing.
+description: Reverb is a marketplace for musicians to buy and sell new, used, and vintage musical instruments
+  and gear, owned by Etsy. The Reverb API is a HATEOAS hypermedia REST API using application/hal+json,
+  with interactive Swagger documentation and an X-Auth-Token header authentication scheme.
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - E-Commerce
-  - Marketplace
-  - Music
-  - Instruments
-  - Etsy
+- Marketplace
+- Music
+- Instruments
+- Ecommerce
 created: '2026-05-08'
 modified: '2026-05-08'
 specificationVersion: '0.19'
-apis: []
+apis:
+- aid: reverb:rest-api
+  name: Reverb REST API
+  description: HATEOAS hypermedia REST API at https://reverb.com/api using application/hal+json. Auth
+    via POST /api/auth/tokens to obtain a token used in X-Auth-Token header. Endpoints exposed via _links
+    include accounts, articles, listings, autocomplete, autosuggest, cart, categories, collections, currencies,
+    payment_methods, price_guides, my account, my orders, my listings, etc.
+  humanURL: https://reverb.com/page/api
+  baseURL: https://reverb.com/api
+  tags:
+  - REST
+  - HATEOAS
+  - HAL+JSON
+  properties:
+  - type: Documentation
+    url: https://reverb.com/page/api
+  - type: Swagger
+    url: https://reverb.com/swagger
+  - type: Authentication
+    url: https://reverb.com/page/api
 common:
-  - type: Website
-    url: https://reverb.com/
-  - type: Plans
-    url: plans/reverb-plans-pricing.yml
-  - type: RateLimits
-    url: rate-limits/reverb-rate-limits.yml
-  - type: FinOps
-    url: finops/reverb-finops.yml
+- type: Website
+  url: https://reverb.com/
+- type: Developer
+  url: https://reverb.com/page/api
+- type: Plans
+  url: plans/reverb-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/reverb-rate-limits.yml
+- type: FinOps
+  url: finops/reverb-finops.yml
 maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+- FN: Kin Lane
+  email: kin@apievangelist.com

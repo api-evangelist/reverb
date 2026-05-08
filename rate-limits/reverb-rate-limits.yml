@@ -7,26 +7,26 @@ created: '2026-05-08'
 modified: '2026-05-08'
 reconciled: false
 tags:
-- E-Commerce
 - Marketplace
 - Music
 - Instruments
-- Etsy
+- Ecommerce
 - Rate Limiting
 - Quotas
 - Throttling
-description: Placeholder rate-limit artifact for Reverb. Replace with real limits once researched.
-notes: Initial scaffold — limits have not yet been reconciled.
+description: Reverb API rate limits are not openly published. Honor 429 responses and ETags/304 Not Modified
+  to reduce traffic.
+notes: 'Always send Accept: application/hal+json and never construct URLs manually.'
 sources:
-- https://reverb.com/
+- https://reverb.com/page/api
 responseCodes:
   throttled: 429
 limits:
-- name: Default
-  scope: account
-  metric: varies
-  limit: see provider documentation
-  notes: Pending reconciliation.
+- name: Default REST
+  scope: token
+  metric: requests
+  limit: not publicly documented
+  notes: Honor 429; use ETags / 304 Not Modified.
 policies:
 - name: Backoff Strategy
   description: Clients should implement exponential backoff with jitter and honor any Retry-After header.

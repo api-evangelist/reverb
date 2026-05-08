@@ -7,16 +7,16 @@ created: '2026-05-08'
 modified: '2026-05-08'
 reconciled: false
 tags:
-- E-Commerce
 - Marketplace
 - Music
 - Instruments
-- Etsy
+- Ecommerce
 - FinOps
 - Cost Management
 - FOCUS
-description: FOCUS-aligned FinOps placeholder for Reverb. Pipeline will replace with real billing details.
-notes: Initial scaffold — billing model has not yet been reconciled.
+description: FOCUS-aligned FinOps profile. Sellers pay selling fees on GMV; developers pay nothing for
+  API access (free).
+notes: Owned by Etsy; broader Etsy seller economics may apply.
 sources:
 - https://reverb.com/
 - https://focus.finops.org/focus-specification/v1-3/
@@ -27,31 +27,35 @@ alignedWith:
   dataSpecVersion: '1.3'
   dataSpecUrl: https://focus.finops.org/focus-specification/v1-3/
 publisherName: Reverb
-serviceCategory: E-Commerce
+serviceCategory: Marketplace
 billingModel:
-  pricingCategory: To Be Reconciled
-  billingFrequency: Monthly
+  pricingCategory: Commission
+  billingFrequency: Per Transaction
   billingCurrency: USD
   chargeCategories:
   - Usage
-  - Purchase
   - Adjustment
 focusColumns:
   ServiceName: Reverb
-  ServiceCategory: E-Commerce
+  ServiceCategory: Marketplace
   ProviderName: Reverb
   PublisherName: Reverb
   InvoiceIssuerName: Reverb
   BillingCurrency: USD
   ChargeCategory: Usage
 meters:
-- name: api_usage
-  description: Catch-all meter pending reconciliation.
-  unit: varies
+- name: selling_fee
+  description: Per-sale Reverb selling fee.
+  unit: USD
   aggregation: sum
   dimensions:
-  - account
-  - resource
+  - seller
+- name: payment_processing
+  description: Payment processing on completed sales.
+  unit: USD
+  aggregation: sum
+  dimensions:
+  - seller
 principles:
 - name: Visibility
   description: Pull provider invoices or usage exports until a self-serve usage feed is documented.
