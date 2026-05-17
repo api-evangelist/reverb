@@ -1,7 +1,7 @@
 aid: reverb
 url: https://raw.githubusercontent.com/api-evangelist/reverb/refs/heads/main/apis.yml
 name: Reverb
-x-type: company
+kind: company
 description: Reverb is a marketplace for musicians to buy and sell new, used, and vintage musical instruments
   and gear, owned by Etsy. The Reverb API is a HATEOAS hypermedia REST API using application/hal+json,
   with interactive Swagger documentation and an X-Auth-Token header authentication scheme.
