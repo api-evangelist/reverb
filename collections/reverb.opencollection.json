@@ -1,0 +1,575 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Reverb API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-Auth-Token",
+      "value": "{{X-Auth-Token}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "API root (HATEOAS entry point)",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://reverb.com/api"
+      },
+      "docs": "Returns a HAL document whose `_links` enumerate the available root\nresources of the Reverb API.\n"
+    },
+    {
+      "info": {
+        "name": "Obtain an authentication token",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://reverb.com/api/auth/tokens",
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Exchanges an email and password for a Reverb auth token. The returned\ntoken is supplied on subsequent requests in the `X-Auth-Token` header.\n"
+    },
+    {
+      "info": {
+        "name": "Email-based authentication helper",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://reverb.com/api/auth/email"
+      },
+      "docs": "Email-based authentication helper"
+    },
+    {
+      "info": {
+        "name": "Initiate password recovery",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://reverb.com/api/auth/forgot_password"
+      },
+      "docs": "Initiate password recovery"
+    },
+    {
+      "info": {
+        "name": "Invalidate the current auth token",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://reverb.com/api/auth/logout"
+      },
+      "docs": "Invalidate the current auth token"
+    },
+    {
+      "info": {
+        "name": "List public listings",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://reverb.com/api/listings"
+      },
+      "docs": "List public listings"
+    },
+    {
+      "info": {
+        "name": "List top-level product categories",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://reverb.com/api/categories"
+      },
+      "docs": "List top-level product categories"
+    },
+    {
+      "info": {
+        "name": "List flattened category tree",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://reverb.com/api/categories/flat"
+      },
+      "docs": "List flattened category tree"
+    },
+    {
+      "info": {
+        "name": "List curated collections",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://reverb.com/api/collections"
+      },
+      "docs": "List curated collections"
+    },
+    {
+      "info": {
+        "name": "List supported countries",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://reverb.com/api/countries"
+      },
+      "docs": "List supported countries"
+    },
+    {
+      "info": {
+        "name": "List articles",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://reverb.com/api/articles"
+      },
+      "docs": "List articles"
+    },
+    {
+      "info": {
+        "name": "List featured articles",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://reverb.com/api/articles/featured"
+      },
+      "docs": "List featured articles"
+    },
+    {
+      "info": {
+        "name": "Autocomplete search suggestions",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://reverb.com/api/autocomplete",
+        "params": [
+          {
+            "name": "query",
+            "value": "",
+            "type": "query"
+          }
+        ]
+      },
+      "docs": "Autocomplete search suggestions"
+    },
+    {
+      "info": {
+        "name": "Autosuggest search suggestions",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://reverb.com/api/autosuggest",
+        "params": [
+          {
+            "name": "query",
+            "value": "",
+            "type": "query"
+          }
+        ]
+      },
+      "docs": "Autosuggest search suggestions"
+    },
+    {
+      "info": {
+        "name": "Look up price guides for gear",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://reverb.com/api/priceguide"
+      },
+      "docs": "Look up price guides for gear"
+    },
+    {
+      "info": {
+        "name": "Supported display currencies",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://reverb.com/api/currencies/display"
+      },
+      "docs": "Supported display currencies"
+    },
+    {
+      "info": {
+        "name": "Supported listing currencies",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://reverb.com/api/currencies/listing"
+      },
+      "docs": "Supported listing currencies"
+    },
+    {
+      "info": {
+        "name": "Supported payment methods",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://reverb.com/api/payment_methods"
+      },
+      "docs": "Supported payment methods"
+    },
+    {
+      "info": {
+        "name": "Shipping regions metadata",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://reverb.com/api/shipping/regions"
+      },
+      "docs": "Shipping regions metadata"
+    },
+    {
+      "info": {
+        "name": "Shipping providers metadata",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://reverb.com/api/shipping/providers"
+      },
+      "docs": "Shipping providers metadata"
+    },
+    {
+      "info": {
+        "name": "Issue a Braintree client token for payments",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://reverb.com/api/braintree/client_token"
+      },
+      "docs": "Issue a Braintree client token for payments"
+    },
+    {
+      "info": {
+        "name": "Accounts root resource",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://reverb.com/api/accounts"
+      },
+      "docs": "Accounts root resource"
+    },
+    {
+      "info": {
+        "name": "Retrieve the current cart",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://reverb.com/api/cart"
+      },
+      "docs": "Retrieve the current cart"
+    },
+    {
+      "info": {
+        "name": "Current authenticated user's shop",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://reverb.com/api/shop"
+      },
+      "docs": "Current authenticated user's shop"
+    },
+    {
+      "info": {
+        "name": "Shop's accepted payment methods",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://reverb.com/api/shop/payment_methods"
+      },
+      "docs": "Shop's accepted payment methods"
+    },
+    {
+      "info": {
+        "name": "Allowed listing condition values for the shop",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://reverb.com/api/shop/listing_conditions"
+      },
+      "docs": "Allowed listing condition values for the shop"
+    },
+    {
+      "info": {
+        "name": "Authenticated user's account",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://reverb.com/api/my/account"
+      },
+      "docs": "Authenticated user's account"
+    },
+    {
+      "info": {
+        "name": "Authenticated user's saved addresses",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://reverb.com/api/my/addresses"
+      },
+      "docs": "Authenticated user's saved addresses"
+    },
+    {
+      "info": {
+        "name": "Authenticated user's saved credit cards",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://reverb.com/api/my/credit_cards"
+      },
+      "docs": "Authenticated user's saved credit cards"
+    },
+    {
+      "info": {
+        "name": "Counters for the authenticated user",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://reverb.com/api/my/counts"
+      },
+      "docs": "Counters for the authenticated user"
+    },
+    {
+      "info": {
+        "name": "Authenticated user's activity feed",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://reverb.com/api/my/feed"
+      },
+      "docs": "Authenticated user's activity feed"
+    },
+    {
+      "info": {
+        "name": "Feedback the user has sent",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://reverb.com/api/my/feedback/sent"
+      },
+      "docs": "Feedback the user has sent"
+    },
+    {
+      "info": {
+        "name": "Feedback the user has received",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://reverb.com/api/my/feedback/received"
+      },
+      "docs": "Feedback the user has received"
+    },
+    {
+      "info": {
+        "name": "Followed shops, brands, and searches",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://reverb.com/api/my/follows"
+      },
+      "docs": "Followed shops, brands, and searches"
+    },
+    {
+      "info": {
+        "name": "Authenticated user's message conversations",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://reverb.com/api/my/conversations"
+      },
+      "docs": "Authenticated user's message conversations"
+    },
+    {
+      "info": {
+        "name": "Recently viewed listings",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://reverb.com/api/my/viewed_listings"
+      },
+      "docs": "Recently viewed listings"
+    },
+    {
+      "info": {
+        "name": "Watchlists and saved lists",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://reverb.com/api/my/lists"
+      },
+      "docs": "Watchlists and saved lists"
+    },
+    {
+      "info": {
+        "name": "Authenticated seller's listings",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://reverb.com/api/my/listings"
+      },
+      "docs": "Authenticated seller's listings"
+    },
+    {
+      "info": {
+        "name": "Draft listings for the authenticated seller",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://reverb.com/api/my/listings/drafts"
+      },
+      "docs": "Draft listings for the authenticated seller"
+    },
+    {
+      "info": {
+        "name": "Negotiations where the user is the buyer",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://reverb.com/api/my/negotiations/buying"
+      },
+      "docs": "Negotiations where the user is the buyer"
+    },
+    {
+      "info": {
+        "name": "Negotiations on the authenticated seller's listings",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://reverb.com/api/my/listings/negotiations"
+      },
+      "docs": "Negotiations on the authenticated seller's listings"
+    },
+    {
+      "info": {
+        "name": "All orders where the user is the buyer",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://reverb.com/api/my/orders/buying/all"
+      },
+      "docs": "All orders where the user is the buyer"
+    },
+    {
+      "info": {
+        "name": "Unpaid buying orders",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://reverb.com/api/my/orders/buying/unpaid"
+      },
+      "docs": "Unpaid buying orders"
+    },
+    {
+      "info": {
+        "name": "All orders where the user is the seller",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://reverb.com/api/my/orders/selling/all"
+      },
+      "docs": "All orders where the user is the seller"
+    },
+    {
+      "info": {
+        "name": "Unpaid selling orders",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://reverb.com/api/my/orders/selling/unpaid"
+      },
+      "docs": "Unpaid selling orders"
+    },
+    {
+      "info": {
+        "name": "Selling orders awaiting shipment",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://reverb.com/api/my/orders/selling/awaiting_shipment"
+      },
+      "docs": "Selling orders awaiting shipment"
+    },
+    {
+      "info": {
+        "name": "Orders awaiting feedback from the user",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://reverb.com/api/my/orders/awaiting_feedback"
+      },
+      "docs": "Orders awaiting feedback from the user"
+    },
+    {
+      "info": {
+        "name": "Authenticated user's \"wants\" list",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://reverb.com/api/wants"
+      },
+      "docs": "Authenticated user's \"wants\" list"
+    },
+    {
+      "info": {
+        "name": "Registered push notification devices for the user",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://reverb.com/api/push_notifications/registrations"
+      },
+      "docs": "Registered push notification devices for the user"
+    }
+  ],
+  "bundled": true
+}
