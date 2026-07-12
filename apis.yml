@@ -35,6 +35,12 @@ apis:
     - type: Authentication
       url: https://reverb.com/page/api
 common:
+  - type: VulnerabilityDisclosure
+    url: security/reverb-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/reverb-domain-security.yml
+  - type: Authentication
+    url: authentication/reverb-authentication.yml
   - type: GitHubOrganization
     url: https://github.com/reverbdotcom
   - type: LinkedIn
