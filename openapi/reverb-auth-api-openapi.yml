@@ -1,0 +1,108 @@
+openapi: 3.1.0
+info:
+  title: Reverb Accounts Auth API
+  version: 1.0.0
+  description: 'Reverb is a marketplace for new, used, and vintage musical instruments and gear
+
+    (owned by Etsy). The Reverb API is a HATEOAS hypermedia REST API that responds
+
+    with application/hal+json. Clients should generally follow links in the
+
+    `_links` element of responses rather than hard-coding URL structures. This
+
+    specification documents the publicly discoverable root resources advertised at
+
+    https://reverb.com/api together with the authentication token endpoint.
+
+    '
+  contact:
+    name: Reverb API
+    url: https://reverb.com/page/api
+  license:
+    name: Proprietary
+servers:
+- url: https://reverb.com
+  description: Reverb production API host
+security:
+- XAuthToken: []
+tags:
+- name: Auth
+paths:
+  /api/auth/tokens:
+    post:
+      summary: Obtain an authentication token
+      description: 'Exchanges an email and password for a Reverb auth token. The returned
+
+        token is supplied on subsequent requests in the `X-Auth-Token` header.
+
+        '
+      operationId: createAuthToken
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+              - email
+              - password
+              properties:
+                email:
+                  type: string
+                  format: email
+                password:
+                  type: string
+                  format: password
+      responses:
+        '200':
+          description: Auth token issued
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  token:
+                    type: string
+      tags:
+      - Auth
+  /api/auth/email:
+    post:
+      summary: Email-based authentication helper
+      operationId: authEmail
+      security: []
+      responses:
+        '200':
+          description: OK
+      tags:
+      - Auth
+  /api/auth/forgot_password:
+    post:
+      summary: Initiate password recovery
+      operationId: forgotPassword
+      security: []
+      responses:
+        '200':
+          description: OK
+      tags:
+      - Auth
+  /api/auth/logout:
+    post:
+      summary: Invalidate the current auth token
+      operationId: logout
+      responses:
+        '200':
+          description: OK
+      tags:
+      - Auth
+components:
+  securitySchemes:
+    XAuthToken:
+      type: apiKey
+      in: header
+      name: X-Auth-Token
+      description: 'Token returned by POST /api/auth/tokens, supplied on subsequent calls in
+
+        the `X-Auth-Token` request header.
+
+        '

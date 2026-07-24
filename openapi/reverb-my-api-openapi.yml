@@ -1,0 +1,230 @@
+openapi: 3.1.0
+info:
+  title: Reverb Accounts My API
+  version: 1.0.0
+  description: 'Reverb is a marketplace for new, used, and vintage musical instruments and gear
+
+    (owned by Etsy). The Reverb API is a HATEOAS hypermedia REST API that responds
+
+    with application/hal+json. Clients should generally follow links in the
+
+    `_links` element of responses rather than hard-coding URL structures. This
+
+    specification documents the publicly discoverable root resources advertised at
+
+    https://reverb.com/api together with the authentication token endpoint.
+
+    '
+  contact:
+    name: Reverb API
+    url: https://reverb.com/page/api
+  license:
+    name: Proprietary
+servers:
+- url: https://reverb.com
+  description: Reverb production API host
+security:
+- XAuthToken: []
+tags:
+- name: My
+paths:
+  /api/my/account:
+    get:
+      summary: Authenticated user's account
+      operationId: getMyAccount
+      responses:
+        '200':
+          description: HAL document for the current account
+      tags:
+      - My
+  /api/my/addresses:
+    get:
+      summary: Authenticated user's saved addresses
+      operationId: getMyAddresses
+      responses:
+        '200':
+          description: HAL collection of addresses
+      tags:
+      - My
+  /api/my/credit_cards:
+    get:
+      summary: Authenticated user's saved credit cards
+      operationId: getMyCreditCards
+      responses:
+        '200':
+          description: HAL collection of stored credit cards
+      tags:
+      - My
+  /api/my/counts:
+    get:
+      summary: Counters for the authenticated user
+      operationId: getMyCounts
+      responses:
+        '200':
+          description: Counters payload (unread messages, drafts, etc.)
+      tags:
+      - My
+  /api/my/feed:
+    get:
+      summary: Authenticated user's activity feed
+      operationId: getMyFeed
+      responses:
+        '200':
+          description: HAL collection of feed items
+      tags:
+      - My
+  /api/my/feedback/sent:
+    get:
+      summary: Feedback the user has sent
+      operationId: getMyFeedbackSent
+      responses:
+        '200':
+          description: HAL collection of feedback entries
+      tags:
+      - My
+  /api/my/feedback/received:
+    get:
+      summary: Feedback the user has received
+      operationId: getMyFeedbackReceived
+      responses:
+        '200':
+          description: HAL collection of feedback entries
+      tags:
+      - My
+  /api/my/follows:
+    get:
+      summary: Followed shops, brands, and searches
+      operationId: getMyFollows
+      responses:
+        '200':
+          description: HAL collection of follows
+      tags:
+      - My
+  /api/my/conversations:
+    get:
+      summary: Authenticated user's message conversations
+      operationId: getMyConversations
+      responses:
+        '200':
+          description: HAL collection of conversations
+      tags:
+      - My
+  /api/my/viewed_listings:
+    get:
+      summary: Recently viewed listings
+      operationId: getRecentlyViewedListings
+      responses:
+        '200':
+          description: HAL collection of recently viewed listings
+      tags:
+      - My
+  /api/my/lists:
+    get:
+      summary: Watchlists and saved lists
+      operationId: getMyLists
+      responses:
+        '200':
+          description: HAL collection of lists
+      tags:
+      - My
+  /api/my/listings:
+    get:
+      summary: Authenticated seller's listings
+      operationId: getMyListings
+      responses:
+        '200':
+          description: HAL collection of listings owned by the user
+      tags:
+      - My
+  /api/my/listings/drafts:
+    get:
+      summary: Draft listings for the authenticated seller
+      operationId: getMyDraftListings
+      responses:
+        '200':
+          description: HAL collection of draft listings
+      tags:
+      - My
+  /api/my/negotiations/buying:
+    get:
+      summary: Negotiations where the user is the buyer
+      operationId: getMyNegotiationsBuying
+      responses:
+        '200':
+          description: HAL collection of buyer-side negotiations
+      tags:
+      - My
+  /api/my/listings/negotiations:
+    get:
+      summary: Negotiations on the authenticated seller's listings
+      operationId: getMyNegotiationsSelling
+      responses:
+        '200':
+          description: HAL collection of seller-side negotiations
+      tags:
+      - My
+  /api/my/orders/buying/all:
+    get:
+      summary: All orders where the user is the buyer
+      operationId: getMyOrdersBuyingAll
+      responses:
+        '200':
+          description: HAL collection of buying orders
+      tags:
+      - My
+  /api/my/orders/buying/unpaid:
+    get:
+      summary: Unpaid buying orders
+      operationId: getMyOrdersBuyingUnpaid
+      responses:
+        '200':
+          description: HAL collection of unpaid buying orders
+      tags:
+      - My
+  /api/my/orders/selling/all:
+    get:
+      summary: All orders where the user is the seller
+      operationId: getMyOrdersSellingAll
+      responses:
+        '200':
+          description: HAL collection of selling orders
+      tags:
+      - My
+  /api/my/orders/selling/unpaid:
+    get:
+      summary: Unpaid selling orders
+      operationId: getMyOrdersSellingUnpaid
+      responses:
+        '200':
+          description: HAL collection of unpaid selling orders
+      tags:
+      - My
+  /api/my/orders/selling/awaiting_shipment:
+    get:
+      summary: Selling orders awaiting shipment
+      operationId: getMyOrdersAwaitingShipment
+      responses:
+        '200':
+          description: HAL collection of orders awaiting shipment
+      tags:
+      - My
+  /api/my/orders/awaiting_feedback:
+    get:
+      summary: Orders awaiting feedback from the user
+      operationId: getMyOrdersAwaitingFeedback
+      responses:
+        '200':
+          description: HAL collection of orders awaiting feedback
+      tags:
+      - My
+components:
+  securitySchemes:
+    XAuthToken:
+      type: apiKey
+      in: header
+      name: X-Auth-Token
+      description: 'Token returned by POST /api/auth/tokens, supplied on subsequent calls in
+
+        the `X-Auth-Token` request header.
+
+        '

@@ -1,0 +1,68 @@
+openapi: 3.1.0
+info:
+  title: Reverb Accounts Shop API
+  version: 1.0.0
+  description: 'Reverb is a marketplace for new, used, and vintage musical instruments and gear
+
+    (owned by Etsy). The Reverb API is a HATEOAS hypermedia REST API that responds
+
+    with application/hal+json. Clients should generally follow links in the
+
+    `_links` element of responses rather than hard-coding URL structures. This
+
+    specification documents the publicly discoverable root resources advertised at
+
+    https://reverb.com/api together with the authentication token endpoint.
+
+    '
+  contact:
+    name: Reverb API
+    url: https://reverb.com/page/api
+  license:
+    name: Proprietary
+servers:
+- url: https://reverb.com
+  description: Reverb production API host
+security:
+- XAuthToken: []
+tags:
+- name: Shop
+paths:
+  /api/shop:
+    get:
+      summary: Current authenticated user's shop
+      operationId: getMyShop
+      responses:
+        '200':
+          description: HAL document for the user's shop
+      tags:
+      - Shop
+  /api/shop/payment_methods:
+    get:
+      summary: Shop's accepted payment methods
+      operationId: getShopPaymentMethods
+      responses:
+        '200':
+          description: HAL collection of payment methods
+      tags:
+      - Shop
+  /api/shop/listing_conditions:
+    get:
+      summary: Allowed listing condition values for the shop
+      operationId: getShopListingConditions
+      responses:
+        '200':
+          description: HAL collection of listing conditions
+      tags:
+      - Shop
+components:
+  securitySchemes:
+    XAuthToken:
+      type: apiKey
+      in: header
+      name: X-Auth-Token
+      description: 'Token returned by POST /api/auth/tokens, supplied on subsequent calls in
+
+        the `X-Auth-Token` request header.
+
+        '
