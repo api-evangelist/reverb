@@ -5,7 +5,20 @@ kind: company
 description: Reverb is a marketplace for musicians to buy and sell new, used, and vintage musical instruments
   and gear, owned by Etsy. The Reverb API is a HATEOAS hypermedia REST API using application/hal+json,
   with interactive Swagger documentation and an X-Auth-Token header authentication scheme.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: free
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Free · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/reverb.png
 tags:
   - Marketplace
   - Music
@@ -15,25 +28,226 @@ created: '2026-05-08'
 modified: '2026-05-08'
 specificationVersion: '0.19'
 apis:
-  - aid: reverb:rest-api
-    name: Reverb REST API
-    description: HATEOAS hypermedia REST API at https://reverb.com/api using application/hal+json. Auth
-      via POST /api/auth/tokens to obtain a token used in X-Auth-Token header. Endpoints exposed via _links
-      include accounts, articles, listings, autocomplete, autosuggest, cart, categories, collections, currencies,
-      payment_methods, price_guides, my account, my orders, my listings, etc.
-    humanURL: https://reverb.com/page/api
-    baseURL: https://reverb.com/api
-    tags:
-    - REST
-    - HATEOAS
-    - HAL+JSON
-    properties:
-    - type: Documentation
-      url: https://reverb.com/page/api
-    - type: Swagger
-      url: https://reverb.com/swagger
-    - type: Authentication
-      url: https://reverb.com/page/api
+- aid: reverb:rest-api
+  name: Reverb REST API
+  description: >-
+    HATEOAS hypermedia REST API at https://reverb.com/api using application/hal+json. Auth via POST /api/auth/tokens
+    to obtain a token used in X-Auth-Token header. Endpoints exposed via _links include accounts, articles,
+    listings, autocomplete, autosuggest, cart, categories, collections, currencies, payment_methods, price_guides,
+    my account, my orders, my listings, etc.
+  humanURL: https://reverb.com/page/api
+  baseURL: https://reverb.com/api
+  tags:
+  - REST
+  - HATEOAS
+  - HAL+JSON
+  properties:
+  - type: Documentation
+    url: https://reverb.com/page/api
+  - type: Swagger
+    url: https://reverb.com/swagger
+  - type: Authentication
+    url: https://reverb.com/page/api
+- aid: reverb:reverb-accounts-api
+  name: Reverb Accounts API
+  description: The Accounts API from Reverb — 1 operation(s) for accounts.
+  humanURL: https://reverb.com/page/api
+  baseURL: https://reverb.com/api
+  tags:
+  - Accounts
+  properties:
+  - type: OpenAPI
+    url: openapi/reverb-accounts-api-openapi.yml
+- aid: reverb:reverb-articles-api
+  name: Reverb Articles API
+  description: The Articles API from Reverb — 2 operation(s) for articles.
+  humanURL: https://reverb.com/page/api
+  baseURL: https://reverb.com/api
+  tags:
+  - Articles
+  properties:
+  - type: OpenAPI
+    url: openapi/reverb-articles-api-openapi.yml
+- aid: reverb:reverb-auth-api
+  name: Reverb Auth API
+  description: The Auth API from Reverb — 4 operation(s) for auth.
+  humanURL: https://reverb.com/page/api
+  baseURL: https://reverb.com/api
+  tags:
+  - Auth
+  properties:
+  - type: OpenAPI
+    url: openapi/reverb-auth-api-openapi.yml
+- aid: reverb:reverb-autocomplete-api
+  name: Reverb Autocomplete API
+  description: The Autocomplete API from Reverb — 1 operation(s) for autocomplete.
+  humanURL: https://reverb.com/page/api
+  baseURL: https://reverb.com/api
+  tags:
+  - Autocomplete
+  properties:
+  - type: OpenAPI
+    url: openapi/reverb-autocomplete-api-openapi.yml
+- aid: reverb:reverb-autosuggest-api
+  name: Reverb Autosuggest API
+  description: The Autosuggest API from Reverb — 1 operation(s) for autosuggest.
+  humanURL: https://reverb.com/page/api
+  baseURL: https://reverb.com/api
+  tags:
+  - Autosuggest
+  properties:
+  - type: OpenAPI
+    url: openapi/reverb-autosuggest-api-openapi.yml
+- aid: reverb:reverb-braintree-api
+  name: Reverb Braintree API
+  description: The Braintree API from Reverb — 1 operation(s) for braintree.
+  humanURL: https://reverb.com/page/api
+  baseURL: https://reverb.com/api
+  tags:
+  - Braintree
+  properties:
+  - type: OpenAPI
+    url: openapi/reverb-braintree-api-openapi.yml
+- aid: reverb:reverb-cart-api
+  name: Reverb Cart API
+  description: The Cart API from Reverb — 1 operation(s) for cart.
+  humanURL: https://reverb.com/page/api
+  baseURL: https://reverb.com/api
+  tags:
+  - Cart
+  properties:
+  - type: OpenAPI
+    url: openapi/reverb-cart-api-openapi.yml
+- aid: reverb:reverb-categories-api
+  name: Reverb Categories API
+  description: The Categories API from Reverb — 2 operation(s) for categories.
+  humanURL: https://reverb.com/page/api
+  baseURL: https://reverb.com/api
+  tags:
+  - Categories
+  properties:
+  - type: OpenAPI
+    url: openapi/reverb-categories-api-openapi.yml
+- aid: reverb:reverb-collections-api
+  name: Reverb Collections API
+  description: The Collections API from Reverb — 1 operation(s) for collections.
+  humanURL: https://reverb.com/page/api
+  baseURL: https://reverb.com/api
+  tags:
+  - Collections
+  properties:
+  - type: OpenAPI
+    url: openapi/reverb-collections-api-openapi.yml
+- aid: reverb:reverb-countries-api
+  name: Reverb Countries API
+  description: The Countries API from Reverb — 1 operation(s) for countries.
+  humanURL: https://reverb.com/page/api
+  baseURL: https://reverb.com/api
+  tags:
+  - Countries
+  properties:
+  - type: OpenAPI
+    url: openapi/reverb-countries-api-openapi.yml
+- aid: reverb:reverb-currencies-api
+  name: Reverb Currencies API
+  description: The Currencies API from Reverb — 2 operation(s) for currencies.
+  humanURL: https://reverb.com/page/api
+  baseURL: https://reverb.com/api
+  tags:
+  - Currencies
+  properties:
+  - type: OpenAPI
+    url: openapi/reverb-currencies-api-openapi.yml
+- aid: reverb:reverb-listings-api
+  name: Reverb Listings API
+  description: The Listings API from Reverb — 1 operation(s) for listings.
+  humanURL: https://reverb.com/page/api
+  baseURL: https://reverb.com/api
+  tags:
+  - Listings
+  properties:
+  - type: OpenAPI
+    url: openapi/reverb-listings-api-openapi.yml
+- aid: reverb:reverb-my-api
+  name: Reverb My API
+  description: The My API from Reverb — 21 operation(s) for my.
+  humanURL: https://reverb.com/page/api
+  baseURL: https://reverb.com/api
+  tags:
+  - My
+  properties:
+  - type: OpenAPI
+    url: openapi/reverb-my-api-openapi.yml
+- aid: reverb:reverb-payment-methods-api
+  name: Reverb Payment Methods API
+  description: The Payment Methods API from Reverb — 1 operation(s) for payment methods.
+  humanURL: https://reverb.com/page/api
+  baseURL: https://reverb.com/api
+  tags:
+  - Payment Methods
+  properties:
+  - type: OpenAPI
+    url: openapi/reverb-payment-methods-api-openapi.yml
+- aid: reverb:reverb-priceguide-api
+  name: Reverb Priceguide API
+  description: The Priceguide API from Reverb — 1 operation(s) for priceguide.
+  humanURL: https://reverb.com/page/api
+  baseURL: https://reverb.com/api
+  tags:
+  - Priceguide
+  properties:
+  - type: OpenAPI
+    url: openapi/reverb-priceguide-api-openapi.yml
+- aid: reverb:reverb-push-notifications-api
+  name: Reverb Push Notifications API
+  description: The Push Notifications API from Reverb — 1 operation(s) for push notifications.
+  humanURL: https://reverb.com/page/api
+  baseURL: https://reverb.com/api
+  tags:
+  - Push Notifications
+  properties:
+  - type: OpenAPI
+    url: openapi/reverb-push-notifications-api-openapi.yml
+- aid: reverb:reverb-reverb-api-api
+  name: Reverb Reverb API API
+  description: The Reverb API API from Reverb — 1 operation(s) for reverb api.
+  humanURL: https://reverb.com/page/api
+  baseURL: https://reverb.com/api
+  tags:
+  - Reverb API
+  properties:
+  - type: OpenAPI
+    url: openapi/reverb-reverb-api-api-openapi.yml
+- aid: reverb:reverb-shipping-api
+  name: Reverb Shipping API
+  description: The Shipping API from Reverb — 2 operation(s) for shipping.
+  humanURL: https://reverb.com/page/api
+  baseURL: https://reverb.com/api
+  tags:
+  - Shipping
+  properties:
+  - type: OpenAPI
+    url: openapi/reverb-shipping-api-openapi.yml
+- aid: reverb:reverb-shop-api
+  name: Reverb Shop API
+  description: The Shop API from Reverb — 3 operation(s) for shop.
+  humanURL: https://reverb.com/page/api
+  baseURL: https://reverb.com/api
+  tags:
+  - Shop
+  properties:
+  - type: OpenAPI
+    url: openapi/reverb-shop-api-openapi.yml
+- aid: reverb:reverb-wants-api
+  name: Reverb Wants API
+  description: The Wants API from Reverb — 1 operation(s) for wants.
+  humanURL: https://reverb.com/page/api
+  baseURL: https://reverb.com/api
+  tags:
+  - Wants
+  properties:
+  - type: OpenAPI
+    url: openapi/reverb-wants-api-openapi.yml
 common:
   - type: AgenticAccess
     url: agentic-access/reverb-agentic-access.yml
