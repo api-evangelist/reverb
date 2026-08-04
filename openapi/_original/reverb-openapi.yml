@@ -1,0 +1,446 @@
+openapi: 3.1.0
+info:
+  title: Reverb API
+  version: "1.0.0"
+  description: |
+    Reverb is a marketplace for new, used, and vintage musical instruments and gear
+    (owned by Etsy). The Reverb API is a HATEOAS hypermedia REST API that responds
+    with application/hal+json. Clients should generally follow links in the
+    `_links` element of responses rather than hard-coding URL structures. This
+    specification documents the publicly discoverable root resources advertised at
+    https://reverb.com/api together with the authentication token endpoint.
+  contact:
+    name: Reverb API
+    url: https://reverb.com/page/api
+  license:
+    name: Proprietary
+servers:
+  - url: https://reverb.com
+    description: Reverb production API host
+security:
+  - XAuthToken: []
+paths:
+  /api:
+    get:
+      summary: API root (HATEOAS entry point)
+      description: |
+        Returns a HAL document whose `_links` enumerate the available root
+        resources of the Reverb API.
+      operationId: getApiRoot
+      security: []
+      responses:
+        "200":
+          description: HAL+JSON document with links to root resources
+          content:
+            application/hal+json:
+              schema:
+                type: object
+  /api/auth/tokens:
+    post:
+      summary: Obtain an authentication token
+      description: |
+        Exchanges an email and password for a Reverb auth token. The returned
+        token is supplied on subsequent requests in the `X-Auth-Token` header.
+      operationId: createAuthToken
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [email, password]
+              properties:
+                email:
+                  type: string
+                  format: email
+                password:
+                  type: string
+                  format: password
+      responses:
+        "200":
+          description: Auth token issued
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  token:
+                    type: string
+  /api/auth/email:
+    post:
+      summary: Email-based authentication helper
+      operationId: authEmail
+      security: []
+      responses:
+        "200":
+          description: OK
+  /api/auth/forgot_password:
+    post:
+      summary: Initiate password recovery
+      operationId: forgotPassword
+      security: []
+      responses:
+        "200":
+          description: OK
+  /api/auth/logout:
+    post:
+      summary: Invalidate the current auth token
+      operationId: logout
+      responses:
+        "200":
+          description: OK
+  /api/listings:
+    get:
+      summary: List public listings
+      operationId: listListings
+      security: []
+      responses:
+        "200":
+          description: Paginated collection of listings
+          content:
+            application/hal+json:
+              schema:
+                type: object
+  /api/categories:
+    get:
+      summary: List top-level product categories
+      operationId: listCategories
+      security: []
+      responses:
+        "200":
+          description: HAL collection of categories
+          content:
+            application/hal+json:
+              schema:
+                type: object
+  /api/categories/flat:
+    get:
+      summary: List flattened category tree
+      operationId: listCategoriesFlat
+      security: []
+      responses:
+        "200":
+          description: Flat list of categories
+          content:
+            application/hal+json:
+              schema:
+                type: object
+  /api/collections:
+    get:
+      summary: List curated collections
+      operationId: listCollections
+      security: []
+      responses:
+        "200":
+          description: HAL collection of collections
+  /api/countries:
+    get:
+      summary: List supported countries
+      operationId: listCountries
+      security: []
+      responses:
+        "200":
+          description: HAL collection of countries
+  /api/articles:
+    get:
+      summary: List articles
+      operationId: listArticles
+      security: []
+      responses:
+        "200":
+          description: HAL collection of articles
+  /api/articles/featured:
+    get:
+      summary: List featured articles
+      operationId: listFeaturedArticles
+      security: []
+      responses:
+        "200":
+          description: HAL collection of featured articles
+  /api/autocomplete:
+    get:
+      summary: Autocomplete search suggestions
+      operationId: autocomplete
+      security: []
+      parameters:
+        - name: query
+          in: query
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Autocomplete results
+  /api/autosuggest:
+    get:
+      summary: Autosuggest search suggestions
+      operationId: autosuggest
+      security: []
+      parameters:
+        - name: query
+          in: query
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Autosuggest results
+  /api/priceguide:
+    get:
+      summary: Look up price guides for gear
+      operationId: priceGuide
+      security: []
+      responses:
+        "200":
+          description: HAL collection of price guide entries
+  /api/currencies/display:
+    get:
+      summary: Supported display currencies
+      operationId: currenciesDisplay
+      security: []
+      responses:
+        "200":
+          description: HAL collection of display currencies
+  /api/currencies/listing:
+    get:
+      summary: Supported listing currencies
+      operationId: currenciesListing
+      security: []
+      responses:
+        "200":
+          description: HAL collection of listing currencies
+  /api/payment_methods:
+    get:
+      summary: Supported payment methods
+      operationId: paymentMethods
+      security: []
+      responses:
+        "200":
+          description: HAL collection of payment methods
+  /api/shipping/regions:
+    get:
+      summary: Shipping regions metadata
+      operationId: shippingRegions
+      security: []
+      responses:
+        "200":
+          description: HAL collection of shipping regions
+  /api/shipping/providers:
+    get:
+      summary: Shipping providers metadata
+      operationId: shippingProviders
+      security: []
+      responses:
+        "200":
+          description: HAL collection of shipping providers
+  /api/braintree/client_token:
+    get:
+      summary: Issue a Braintree client token for payments
+      operationId: braintreeClientToken
+      responses:
+        "200":
+          description: Braintree client token payload
+  /api/accounts:
+    get:
+      summary: Accounts root resource
+      operationId: accountsRoot
+      responses:
+        "200":
+          description: HAL document for accounts
+  /api/cart:
+    get:
+      summary: Retrieve the current cart
+      operationId: getCart
+      responses:
+        "200":
+          description: HAL document for the current cart
+  /api/shop:
+    get:
+      summary: Current authenticated user's shop
+      operationId: getMyShop
+      responses:
+        "200":
+          description: HAL document for the user's shop
+  /api/shop/payment_methods:
+    get:
+      summary: Shop's accepted payment methods
+      operationId: getShopPaymentMethods
+      responses:
+        "200":
+          description: HAL collection of payment methods
+  /api/shop/listing_conditions:
+    get:
+      summary: Allowed listing condition values for the shop
+      operationId: getShopListingConditions
+      responses:
+        "200":
+          description: HAL collection of listing conditions
+  /api/my/account:
+    get:
+      summary: Authenticated user's account
+      operationId: getMyAccount
+      responses:
+        "200":
+          description: HAL document for the current account
+  /api/my/addresses:
+    get:
+      summary: Authenticated user's saved addresses
+      operationId: getMyAddresses
+      responses:
+        "200":
+          description: HAL collection of addresses
+  /api/my/credit_cards:
+    get:
+      summary: Authenticated user's saved credit cards
+      operationId: getMyCreditCards
+      responses:
+        "200":
+          description: HAL collection of stored credit cards
+  /api/my/counts:
+    get:
+      summary: Counters for the authenticated user
+      operationId: getMyCounts
+      responses:
+        "200":
+          description: Counters payload (unread messages, drafts, etc.)
+  /api/my/feed:
+    get:
+      summary: Authenticated user's activity feed
+      operationId: getMyFeed
+      responses:
+        "200":
+          description: HAL collection of feed items
+  /api/my/feedback/sent:
+    get:
+      summary: Feedback the user has sent
+      operationId: getMyFeedbackSent
+      responses:
+        "200":
+          description: HAL collection of feedback entries
+  /api/my/feedback/received:
+    get:
+      summary: Feedback the user has received
+      operationId: getMyFeedbackReceived
+      responses:
+        "200":
+          description: HAL collection of feedback entries
+  /api/my/follows:
+    get:
+      summary: Followed shops, brands, and searches
+      operationId: getMyFollows
+      responses:
+        "200":
+          description: HAL collection of follows
+  /api/my/conversations:
+    get:
+      summary: Authenticated user's message conversations
+      operationId: getMyConversations
+      responses:
+        "200":
+          description: HAL collection of conversations
+  /api/my/viewed_listings:
+    get:
+      summary: Recently viewed listings
+      operationId: getRecentlyViewedListings
+      responses:
+        "200":
+          description: HAL collection of recently viewed listings
+  /api/my/lists:
+    get:
+      summary: Watchlists and saved lists
+      operationId: getMyLists
+      responses:
+        "200":
+          description: HAL collection of lists
+  /api/my/listings:
+    get:
+      summary: Authenticated seller's listings
+      operationId: getMyListings
+      responses:
+        "200":
+          description: HAL collection of listings owned by the user
+  /api/my/listings/drafts:
+    get:
+      summary: Draft listings for the authenticated seller
+      operationId: getMyDraftListings
+      responses:
+        "200":
+          description: HAL collection of draft listings
+  /api/my/negotiations/buying:
+    get:
+      summary: Negotiations where the user is the buyer
+      operationId: getMyNegotiationsBuying
+      responses:
+        "200":
+          description: HAL collection of buyer-side negotiations
+  /api/my/listings/negotiations:
+    get:
+      summary: Negotiations on the authenticated seller's listings
+      operationId: getMyNegotiationsSelling
+      responses:
+        "200":
+          description: HAL collection of seller-side negotiations
+  /api/my/orders/buying/all:
+    get:
+      summary: All orders where the user is the buyer
+      operationId: getMyOrdersBuyingAll
+      responses:
+        "200":
+          description: HAL collection of buying orders
+  /api/my/orders/buying/unpaid:
+    get:
+      summary: Unpaid buying orders
+      operationId: getMyOrdersBuyingUnpaid
+      responses:
+        "200":
+          description: HAL collection of unpaid buying orders
+  /api/my/orders/selling/all:
+    get:
+      summary: All orders where the user is the seller
+      operationId: getMyOrdersSellingAll
+      responses:
+        "200":
+          description: HAL collection of selling orders
+  /api/my/orders/selling/unpaid:
+    get:
+      summary: Unpaid selling orders
+      operationId: getMyOrdersSellingUnpaid
+      responses:
+        "200":
+          description: HAL collection of unpaid selling orders
+  /api/my/orders/selling/awaiting_shipment:
+    get:
+      summary: Selling orders awaiting shipment
+      operationId: getMyOrdersAwaitingShipment
+      responses:
+        "200":
+          description: HAL collection of orders awaiting shipment
+  /api/my/orders/awaiting_feedback:
+    get:
+      summary: Orders awaiting feedback from the user
+      operationId: getMyOrdersAwaitingFeedback
+      responses:
+        "200":
+          description: HAL collection of orders awaiting feedback
+  /api/wants:
+    get:
+      summary: Authenticated user's "wants" list
+      operationId: getMyWants
+      responses:
+        "200":
+          description: HAL collection of wanted items
+  /api/push_notifications/registrations:
+    get:
+      summary: Registered push notification devices for the user
+      operationId: getPushNotificationRegistrations
+      responses:
+        "200":
+          description: HAL collection of push registrations
+components:
+  securitySchemes:
+    XAuthToken:
+      type: apiKey
+      in: header
+      name: X-Auth-Token
+      description: |
+        Token returned by POST /api/auth/tokens, supplied on subsequent calls in
+        the `X-Auth-Token` request header.
