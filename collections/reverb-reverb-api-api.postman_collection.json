@@ -1,0 +1,127 @@
+{
+  "item": [
+    {
+      "id": "49dee4b1-d2d7-447f-bbff-1e579b619cd1",
+      "name": "Reverb API",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "649a56c2-f979-471c-8d2b-97ebd75c44bc",
+          "name": "API root (HATEOAS entry point)",
+          "request": {
+            "name": "API root (HATEOAS entry point)",
+            "description": {
+              "content": "Returns a HAL document whose `_links` enumerate the available root\nresources of the Reverb API.\n",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "api"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/hal+json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "566fb85f-2e91-45ed-bf22-80fa63c83930",
+              "name": "HAL+JSON document with links to root resources",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Auth-Token",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/hal+json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/hal+json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://reverb.com",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "X-Auth-Token"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "e9271503-ff74-4035-89e0-05833fcd9992",
+    "name": "Reverb Accounts Reverb API API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Reverb is a marketplace for new, used, and vintage musical instruments and gear\n(owned by Etsy). The Reverb API is a HATEOAS hypermedia REST API that responds\nwith application/hal+json. Clients should generally follow links in the\n`_links` element of responses rather than hard-coding URL structures. This\nspecification documents the publicly discoverable root resources advertised at\nhttps://reverb.com/api together with the authentication token endpoint.\n\n\nContact Support:\n Name: Reverb API",
+      "type": "text/plain"
+    }
+  }
+}

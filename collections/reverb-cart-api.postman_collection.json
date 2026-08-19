@@ -1,0 +1,116 @@
+{
+  "item": [
+    {
+      "id": "5b6c4df5-563f-431f-9d84-b551ac8cf9a7",
+      "name": "Cart",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "d84270bc-99ca-4552-8f19-f06fc019c74d",
+          "name": "Retrieve the current cart",
+          "request": {
+            "name": "Retrieve the current cart",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "cart"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "8d58d572-52f5-4d5b-9437-3ad96b1bb3bd",
+              "name": "HAL document for the current cart",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "cart"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Auth-Token",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://reverb.com",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "X-Auth-Token"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "32649573-b74c-4f0e-af9e-ffe9f2f55221",
+    "name": "Reverb Accounts Cart API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Reverb is a marketplace for new, used, and vintage musical instruments and gear\n(owned by Etsy). The Reverb API is a HATEOAS hypermedia REST API that responds\nwith application/hal+json. Clients should generally follow links in the\n`_links` element of responses rather than hard-coding URL structures. This\nspecification documents the publicly discoverable root resources advertised at\nhttps://reverb.com/api together with the authentication token endpoint.\n\n\nContact Support:\n Name: Reverb API",
+      "type": "text/plain"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Reverb Accounts Categories API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-Auth-Token",
+      "value": "{{X-Auth-Token}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Categories",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List top-level product categories",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://reverb.com/api/categories"
+          },
+          "docs": "List top-level product categories"
+        },
+        {
+          "info": {
+            "name": "List flattened category tree",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://reverb.com/api/categories/flat"
+          },
+          "docs": "List flattened category tree"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

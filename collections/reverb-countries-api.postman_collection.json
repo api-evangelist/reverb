@@ -1,0 +1,116 @@
+{
+  "item": [
+    {
+      "id": "892f61c1-ef98-4dff-9505-001665419d1a",
+      "name": "Countries",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "b27d3914-c09b-45f4-a850-21038fbaaf9e",
+          "name": "List supported countries",
+          "request": {
+            "name": "List supported countries",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "countries"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "92a9b385-71b3-445d-adc5-c65b432d9671",
+              "name": "HAL collection of countries",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "countries"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Auth-Token",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://reverb.com",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "X-Auth-Token"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "fef2c48f-bb53-4e82-a6e7-df331518d990",
+    "name": "Reverb Accounts Countries API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Reverb is a marketplace for new, used, and vintage musical instruments and gear\n(owned by Etsy). The Reverb API is a HATEOAS hypermedia REST API that responds\nwith application/hal+json. Clients should generally follow links in the\n`_links` element of responses rather than hard-coding URL structures. This\nspecification documents the publicly discoverable root resources advertised at\nhttps://reverb.com/api together with the authentication token endpoint.\n\n\nContact Support:\n Name: Reverb API",
+      "type": "text/plain"
+    }
+  }
+}

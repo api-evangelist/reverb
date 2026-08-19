@@ -1,0 +1,37 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Reverb Accounts Reverb API API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-Auth-Token",
+      "value": "{{X-Auth-Token}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Reverb API",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "API root (HATEOAS entry point)",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://reverb.com/api"
+          },
+          "docs": "Returns a HAL document whose `_links` enumerate the available root\nresources of the Reverb API.\n"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

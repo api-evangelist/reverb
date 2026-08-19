@@ -1,0 +1,37 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Reverb Accounts Cart API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-Auth-Token",
+      "value": "{{X-Auth-Token}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Cart",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Retrieve the current cart",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://reverb.com/api/cart"
+          },
+          "docs": "Retrieve the current cart"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

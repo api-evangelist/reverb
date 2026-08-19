@@ -1,0 +1,59 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Reverb Accounts Shop API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-Auth-Token",
+      "value": "{{X-Auth-Token}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Shop",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Current authenticated user's shop",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://reverb.com/api/shop"
+          },
+          "docs": "Current authenticated user's shop"
+        },
+        {
+          "info": {
+            "name": "Shop's accepted payment methods",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://reverb.com/api/shop/payment_methods"
+          },
+          "docs": "Shop's accepted payment methods"
+        },
+        {
+          "info": {
+            "name": "Allowed listing condition values for the shop",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://reverb.com/api/shop/listing_conditions"
+          },
+          "docs": "Allowed listing condition values for the shop"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

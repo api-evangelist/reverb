@@ -1,0 +1,127 @@
+{
+  "item": [
+    {
+      "id": "0454d781-0c9f-4642-bc63-30e37fa1846d",
+      "name": "Autosuggest",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "28c20831-a127-4c8f-91ad-6f5bc9e2e9fd",
+          "name": "Autosuggest search suggestions",
+          "request": {
+            "name": "Autosuggest search suggestions",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "autosuggest"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "query",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "88f16abc-1d14-4214-9f37-30d7e94feaf1",
+              "name": "Autosuggest results",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "autosuggest"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "query",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Auth-Token",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://reverb.com",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "X-Auth-Token"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "9347197d-9dde-4384-91a5-97435dadb311",
+    "name": "Reverb Accounts Autosuggest API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Reverb is a marketplace for new, used, and vintage musical instruments and gear\n(owned by Etsy). The Reverb API is a HATEOAS hypermedia REST API that responds\nwith application/hal+json. Clients should generally follow links in the\n`_links` element of responses rather than hard-coding URL structures. This\nspecification documents the publicly discoverable root resources advertised at\nhttps://reverb.com/api together with the authentication token endpoint.\n\n\nContact Support:\n Name: Reverb API",
+      "type": "text/plain"
+    }
+  }
+}

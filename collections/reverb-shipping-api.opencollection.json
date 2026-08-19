@@ -1,0 +1,48 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Reverb Accounts Shipping API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-Auth-Token",
+      "value": "{{X-Auth-Token}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Shipping",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Shipping regions metadata",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://reverb.com/api/shipping/regions"
+          },
+          "docs": "Shipping regions metadata"
+        },
+        {
+          "info": {
+            "name": "Shipping providers metadata",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://reverb.com/api/shipping/providers"
+          },
+          "docs": "Shipping providers metadata"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

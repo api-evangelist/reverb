@@ -1,0 +1,1530 @@
+{
+  "item": [
+    {
+      "id": "d6da3e57-487b-4fb8-b73c-d45e523689f7",
+      "name": "My",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "2cdcfad7-dcc2-4af1-b323-af45ddb00db0",
+          "name": "Authenticated user's account",
+          "request": {
+            "name": "Authenticated user's account",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "my",
+                "account"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "caeebc63-4550-4fd2-b809-b3c069a2be4a",
+              "name": "HAL document for the current account",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "my",
+                    "account"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Auth-Token",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "3d31d258-35f4-4eef-bb37-d43e7cd6289c",
+          "name": "Authenticated user's saved addresses",
+          "request": {
+            "name": "Authenticated user's saved addresses",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "my",
+                "addresses"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "fca38e84-18b8-4db2-a8b5-ff1b8416b958",
+              "name": "HAL collection of addresses",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "my",
+                    "addresses"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Auth-Token",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "585fdb28-7097-45df-ab47-cd79a35f546e",
+          "name": "Authenticated user's saved credit cards",
+          "request": {
+            "name": "Authenticated user's saved credit cards",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "my",
+                "credit_cards"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "b2ffea42-1f37-4131-b588-446666311325",
+              "name": "HAL collection of stored credit cards",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "my",
+                    "credit_cards"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Auth-Token",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "34fc6010-5db8-419c-b335-ed430067b61d",
+          "name": "Counters for the authenticated user",
+          "request": {
+            "name": "Counters for the authenticated user",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "my",
+                "counts"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "cb34615b-60b8-481b-a536-1225fa5e06c8",
+              "name": "Counters payload (unread messages, drafts, etc.)",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "my",
+                    "counts"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Auth-Token",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "ed092ab3-5eae-40b2-bbbb-ccfe0bf9bdbf",
+          "name": "Authenticated user's activity feed",
+          "request": {
+            "name": "Authenticated user's activity feed",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "my",
+                "feed"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "353e0a0a-6d54-468b-a1d9-fef198e954cf",
+              "name": "HAL collection of feed items",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "my",
+                    "feed"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Auth-Token",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "357b1dfc-77dc-492e-bd2b-975746bd3c44",
+          "name": "Feedback the user has sent",
+          "request": {
+            "name": "Feedback the user has sent",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "my",
+                "feedback",
+                "sent"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "aca42fa1-f439-4e04-9ece-4d2d904db1f2",
+              "name": "HAL collection of feedback entries",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "my",
+                    "feedback",
+                    "sent"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Auth-Token",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "d4998a09-7942-42a6-b368-c4132e940917",
+          "name": "Feedback the user has received",
+          "request": {
+            "name": "Feedback the user has received",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "my",
+                "feedback",
+                "received"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "4696b75a-4ca6-49ce-b0dd-d800289b2ae6",
+              "name": "HAL collection of feedback entries",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "my",
+                    "feedback",
+                    "received"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Auth-Token",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "d7add289-8f91-46ce-8f2a-f82d5ca93bb2",
+          "name": "Followed shops, brands, and searches",
+          "request": {
+            "name": "Followed shops, brands, and searches",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "my",
+                "follows"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "40f2e8f1-5111-409a-88e4-e5995c48bc7b",
+              "name": "HAL collection of follows",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "my",
+                    "follows"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Auth-Token",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "5ea47b56-07a2-4e43-89d1-25d0b440fa69",
+          "name": "Authenticated user's message conversations",
+          "request": {
+            "name": "Authenticated user's message conversations",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "my",
+                "conversations"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "e8c113d3-28a7-4125-91bf-ad01123ad0f4",
+              "name": "HAL collection of conversations",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "my",
+                    "conversations"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Auth-Token",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "a180bbe3-7962-4045-bfe2-83079944ff83",
+          "name": "Recently viewed listings",
+          "request": {
+            "name": "Recently viewed listings",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "my",
+                "viewed_listings"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "f47d3ad6-cdb6-4483-803b-96e17f5305ac",
+              "name": "HAL collection of recently viewed listings",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "my",
+                    "viewed_listings"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Auth-Token",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "37d9ce96-7501-4f78-bbb8-f92e6af5fa7d",
+          "name": "Watchlists and saved lists",
+          "request": {
+            "name": "Watchlists and saved lists",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "my",
+                "lists"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "d898cee7-4bf3-400c-8c00-b0be2f2f5f5f",
+              "name": "HAL collection of lists",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "my",
+                    "lists"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Auth-Token",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "79a71292-ed6e-46cd-bc9a-d5114e7e4f3e",
+          "name": "Authenticated seller's listings",
+          "request": {
+            "name": "Authenticated seller's listings",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "my",
+                "listings"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "24ed8bed-40b4-4a9a-8a41-68d53dfdaec5",
+              "name": "HAL collection of listings owned by the user",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "my",
+                    "listings"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Auth-Token",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "a705662f-b48c-4a1e-850c-c255b977691a",
+          "name": "Draft listings for the authenticated seller",
+          "request": {
+            "name": "Draft listings for the authenticated seller",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "my",
+                "listings",
+                "drafts"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "7b8f64b5-14a0-47ce-821f-5e9597868210",
+              "name": "HAL collection of draft listings",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "my",
+                    "listings",
+                    "drafts"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Auth-Token",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "490c2696-cc6d-4205-b1b9-e87b1a28f57f",
+          "name": "Negotiations where the user is the buyer",
+          "request": {
+            "name": "Negotiations where the user is the buyer",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "my",
+                "negotiations",
+                "buying"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "73abd059-d238-4519-9983-75d38f9b381e",
+              "name": "HAL collection of buyer-side negotiations",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "my",
+                    "negotiations",
+                    "buying"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Auth-Token",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "2a7ecbf4-72b5-4c38-9e91-96e68b5e3844",
+          "name": "Negotiations on the authenticated seller's listings",
+          "request": {
+            "name": "Negotiations on the authenticated seller's listings",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "my",
+                "listings",
+                "negotiations"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "1e3942c3-6920-4120-91d1-f6a2a6f6bb50",
+              "name": "HAL collection of seller-side negotiations",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "my",
+                    "listings",
+                    "negotiations"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Auth-Token",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "5aa7417d-d294-4d7c-9700-f60b27f4ef7e",
+          "name": "All orders where the user is the buyer",
+          "request": {
+            "name": "All orders where the user is the buyer",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "my",
+                "orders",
+                "buying",
+                "all"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "9ed03f01-13e9-4658-86ff-42cdab872efc",
+              "name": "HAL collection of buying orders",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "my",
+                    "orders",
+                    "buying",
+                    "all"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Auth-Token",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "cdc83953-6eb3-4fc0-8e4f-4240dba56a8a",
+          "name": "Unpaid buying orders",
+          "request": {
+            "name": "Unpaid buying orders",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "my",
+                "orders",
+                "buying",
+                "unpaid"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "229f810b-1cff-4c4a-9940-ac7674c52403",
+              "name": "HAL collection of unpaid buying orders",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "my",
+                    "orders",
+                    "buying",
+                    "unpaid"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Auth-Token",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "6bee222a-4f52-4487-8de4-81c6b2c9c58f",
+          "name": "All orders where the user is the seller",
+          "request": {
+            "name": "All orders where the user is the seller",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "my",
+                "orders",
+                "selling",
+                "all"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "2db77561-aa36-4b2a-88f3-53c0024e8e61",
+              "name": "HAL collection of selling orders",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "my",
+                    "orders",
+                    "selling",
+                    "all"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Auth-Token",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "754daa8d-8da0-4326-bf5b-2db0f204ef68",
+          "name": "Unpaid selling orders",
+          "request": {
+            "name": "Unpaid selling orders",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "my",
+                "orders",
+                "selling",
+                "unpaid"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "10d9596a-cc40-4dac-9f4d-9d550ebb59da",
+              "name": "HAL collection of unpaid selling orders",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "my",
+                    "orders",
+                    "selling",
+                    "unpaid"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Auth-Token",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "ee9ff1a5-ca24-4774-94ae-46cdb5b4e393",
+          "name": "Selling orders awaiting shipment",
+          "request": {
+            "name": "Selling orders awaiting shipment",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "my",
+                "orders",
+                "selling",
+                "awaiting_shipment"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "def61d1a-05a2-4e58-9c0d-854dab231044",
+              "name": "HAL collection of orders awaiting shipment",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "my",
+                    "orders",
+                    "selling",
+                    "awaiting_shipment"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Auth-Token",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "99c7c072-b1f7-42c2-8a5f-69992787b224",
+          "name": "Orders awaiting feedback from the user",
+          "request": {
+            "name": "Orders awaiting feedback from the user",
+            "description": {},
+            "url": {
+              "path": [
+                "api",
+                "my",
+                "orders",
+                "awaiting_feedback"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "cfd01049-d3b1-44cb-ae26-71e0aadadbfe",
+              "name": "HAL collection of orders awaiting feedback",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api",
+                    "my",
+                    "orders",
+                    "awaiting_feedback"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-Auth-Token",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://reverb.com",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "X-Auth-Token"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "e0182745-f8b2-412a-bfa0-8a2d4b104342",
+    "name": "Reverb Accounts My API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Reverb is a marketplace for new, used, and vintage musical instruments and gear\n(owned by Etsy). The Reverb API is a HATEOAS hypermedia REST API that responds\nwith application/hal+json. Clients should generally follow links in the\n`_links` element of responses rather than hard-coding URL structures. This\nspecification documents the publicly discoverable root resources advertised at\nhttps://reverb.com/api together with the authentication token endpoint.\n\n\nContact Support:\n Name: Reverb API",
+      "type": "text/plain"
+    }
+  }
+}

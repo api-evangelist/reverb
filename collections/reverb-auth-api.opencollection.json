@@ -1,0 +1,74 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Reverb Accounts Auth API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-Auth-Token",
+      "value": "{{X-Auth-Token}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Auth",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Obtain an authentication token",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://reverb.com/api/auth/tokens",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Exchanges an email and password for a Reverb auth token. The returned\ntoken is supplied on subsequent requests in the `X-Auth-Token` header.\n"
+        },
+        {
+          "info": {
+            "name": "Email-based authentication helper",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://reverb.com/api/auth/email"
+          },
+          "docs": "Email-based authentication helper"
+        },
+        {
+          "info": {
+            "name": "Initiate password recovery",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://reverb.com/api/auth/forgot_password"
+          },
+          "docs": "Initiate password recovery"
+        },
+        {
+          "info": {
+            "name": "Invalidate the current auth token",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://reverb.com/api/auth/logout"
+          },
+          "docs": "Invalidate the current auth token"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
