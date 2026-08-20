@@ -23,6 +23,11 @@ tags:
   - Marketplace
   - Music
   - Instruments
+  - E-Commerce
+tags_raw:
+  - Marketplace
+  - Music
+  - Instruments
   - Ecommerce
 created: '2026-05-08'
 modified: '2026-05-08'
@@ -54,6 +59,8 @@ apis:
   humanURL: https://reverb.com/page/api
   baseURL: https://reverb.com/api
   tags:
+  - Account
+  tags_raw:
   - Accounts
   properties:
   - type: OpenAPI
@@ -74,6 +81,8 @@ apis:
   humanURL: https://reverb.com/page/api
   baseURL: https://reverb.com/api
   tags:
+  - Authentication
+  tags_raw:
   - Auth
   properties:
   - type: OpenAPI
@@ -134,6 +143,8 @@ apis:
   humanURL: https://reverb.com/page/api
   baseURL: https://reverb.com/api
   tags:
+  - Collection
+  tags_raw:
   - Collections
   properties:
   - type: OpenAPI
@@ -154,6 +165,8 @@ apis:
   humanURL: https://reverb.com/page/api
   baseURL: https://reverb.com/api
   tags:
+  - Currency
+  tags_raw:
   - Currencies
   properties:
   - type: OpenAPI
