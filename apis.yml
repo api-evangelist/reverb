@@ -5,6 +5,18 @@ kind: company
 description: Reverb is a marketplace for musicians to buy and sell new, used, and vintage musical instruments
   and gear, owned by Etsy. The Reverb API is a HATEOAS hypermedia REST API using application/hal+json,
   with interactive Swagger documentation and an X-Auth-Token header authentication scheme.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: true
+  label: Hosted service · you call their endpoint
+  confidence: high
+  source:
+  - openapi
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: free
   onboarding: self-serve
