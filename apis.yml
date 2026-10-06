@@ -43,7 +43,7 @@ tags_raw:
 - Instruments
 - Ecommerce
 created: '2026-05-08'
-modified: '2026-09-16'
+modified: '2026-10-06'
 specificationVersion: '0.23'
 apis:
 - aid: reverb:rest-api
@@ -274,6 +274,8 @@ apis:
   - type: OpenAPI
     url: openapi/reverb-wants-api-openapi.yml
 common:
+- url: https://reverb.com/news
+  type: Blog
 - type: AgenticAccess
   url: agentic-access/reverb-agentic-access.yml
 - type: VulnerabilityDisclosure
