@@ -11,6 +11,8 @@ checked:
 - https://n8n.io/integrations/reverb/
 - https://zapier.com/apps/reverb/integrations
 - bigcommerce/integrations/bigcommerce-integration-edges.yml
+- https://api.apis.guru/v2/list.json
+- https://api.apis.guru/v2/providers.json
 summary: null
 marketplace_apps: []
 edges:
@@ -31,4 +33,45 @@ edges:
   detected: '2026-10-20'
   detected_by: mirror-platform-listings.py
   category: Sales Channels, Marketplaces
+- partner_name: APIs.guru OpenAPI Directory
+  partner: apis-guru
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: third-party
+  evidence: https://apis.guru/
+  category: API definition directory listing (OpenAPI)
+  contract_reference:
+    register: APIs.guru OpenAPI Directory
+    spec_file: null
+    standard: APIs.guru OpenAPI Directory
+    role: listed-in-directory
+    directory_provider: reverb.com
+    matched_domain: reverb.com
+    matched_by: domain
+    apis_listed: 1
+    version_count: 1
+    first_added: '2015-11-10'
+    last_updated: '2021-06-21'
+    origin_publisher_hosted: false
+    origin_hosts:
+    - s3.amazonaws.com
+    categories:
+    - ecommerce
+    own_openapi_files: 20
+    listings:
+    - key: reverb.com
+      title: reverb
+      preferred: '3.0'
+      versions: 1
+      swagger_url: https://api.apis.guru/v2/specs/reverb.com/3.0/openapi.json
+      origin_url: https://s3.amazonaws.com/swagger.reverb.com/swagger.json
+      openapi_version: 3.0.0
+    signal_note: 'participation only: a community directory listing (APIs.guru collects definitions; the provider
+      did not file them). Signals: version_count, apis_listed, origin_publisher_hosted.'
+    detected_by: sweep-openapi-directory-apis-guru.py
+    detected: '2026-10-22'
+  detected_by: sweep-openapi-directory-apis-guru.py
+  first_seen: '2026-10-22'
 templates: []
